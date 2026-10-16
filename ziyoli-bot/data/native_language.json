@@ -1,0 +1,211 @@
+{
+  "subject_name": "Ona tili",
+  "subject_code": "native_language",
+  "questions": [
+    {
+      "id": "uz_01",
+      "subject": "native_language",
+      "topic": "Fonetika va orfoepiya",
+      "difficulty": "easy",
+      "question": "O'zbek tilida nechta unli tovush va nechta unli harf bor?",
+      "options": ["6 ta unli tovush, 6 ta unli harf", "6 ta unli tovush, 10 ta unli harf", "9 ta unli tovush, 6 ta unli harf", "8 ta unli tovush, 8 ta unli harf"],
+      "correct_answer": 0,
+      "explanation": "Hozirgi o'zbek adabiy tilida 6 ta unli fonema mavjud: [a], [o], [i], [u], [o'], [e] va ularni ifodalovchi 6 ta harf bor: a, o, i, u, o', e."
+    },
+    {
+      "id": "uz_02",
+      "subject": "native_language",
+      "topic": "Fonetika va orfoepiya",
+      "difficulty": "medium",
+      "question": "Qaysi so'zda tovush tushishi (eliziya) hodisasi ro'y bergan?",
+      "options": ["Singlim", "Pastqam", "O'rtoqlik", "Balandlik"],
+      "correct_answer": 0,
+      "explanation": "'Singil' so'ziga egalik qo'shimchasi qo'shilganda ikkinchi bo'g'indagi 'i' tovushi tushib qoladi: singil + im = singlim."
+    },
+    {
+      "id": "uz_03",
+      "subject": "native_language",
+      "topic": "Imlo qoidalari",
+      "difficulty": "easy",
+      "question": "Qaysi qatordagi so'z imlo qoidasiga ko'ra to'g'ri yozilgan?",
+      "options": ["Mashxur", "Mashhur", "Xurmat", "Saxovatli emas, sahovatli"],
+      "correct_answer": 1,
+      "explanation": "Bu so'zda bo'g'iz tovushi 'h' yoziladi: 'Mashhur'. 'Mashxur' varianti imlo xatosi hisoblanadi."
+    },
+    {
+      "id": "uz_04",
+      "subject": "native_language",
+      "topic": "Imlo qoidalari",
+      "difficulty": "medium",
+      "question": "Qaysi so'z juft yoki takroriy so'z sifatida chiziqcha bilan yozilmaydi?",
+      "options": ["Katta-kichik", "Asta-sekin", "Birma-bir", "Bugun-erta"],
+      "correct_answer": 2,
+      "explanation": "'Birma-bir', 'qadamma-qadam' kabi -ma/-ba orqali yasalgan takroriy so'zlar chiziqcha bilan yoziladi, lekin birgalikda 'birma-bir' chiziqcha bilan, agar qo'shma so'z bo'lsa qo'shib yoziladi. Variantlarda 'Birma-bir' chiziqcha bilan, to'g'ri ajratilishi: leksiklashgan so'zlar diqqat bilan tekshiriladi."
+    },
+    {
+      "id": "uz_05",
+      "subject": "native_language",
+      "topic": "Leksikologiya",
+      "difficulty": "easy",
+      "question": "O'zaro shakli bir xil, ammo ma'nolari mutlaqo boshqa bo'lgan so'zlar nima deyiladi?",
+      "options": ["Sinonimlar", "Antonimlar", "Omonimlar", "Paronimlar"],
+      "correct_answer": 2,
+      "explanation": "Talaffuzi va yozilishi bir xil, ammo ma'nolari o'rtasida hech qanday semantik bog'liqlik bo'lmagan so'zlar omonimlar deyiladi (masalan, yoz - fasl va yoz - harakat)."
+    },
+    {
+      "id": "uz_06",
+      "subject": "native_language",
+      "topic": "Leksikologiya",
+      "difficulty": "medium",
+      "question": "Qaysi qatorda paronim so'zlar berilgan?",
+      "options": ["Asr - asir", "Katta - ulkan", "Oq - qora", "Daraxt - yaproq"],
+      "correct_answer": 0,
+      "explanation": "Talaffuzi va yozilishi bir-biriga juda yaqin, ammo ma'nosi farq qiluvchi so'zlar paronimlar hisoblanadi (asr - 100 yil, asir - tutqun)."
+    },
+    {
+      "id": "uz_07",
+      "subject": "native_language",
+      "topic": "So'z turkumlari",
+      "difficulty": "easy",
+      "question": "Harakatning belgisini, paytini yoki o'rnini bildiruvchi mustaqil so'z turkumi nima?",
+      "options": ["Sifat", "Ravish", "Olmosh", "Fe'l"],
+      "correct_answer": 1,
+      "explanation": "Harakat yoki holatning belgisini, bajarilish o'rni, payti, sababi va darajasini bildirgan mustaqil so'z turkumi Ravish deyiladi (tez yurdi, kecha keldi)."
+    },
+    {
+      "id": "uz_08",
+      "subject": "native_language",
+      "topic": "So'z turkumlari",
+      "difficulty": "medium",
+      "question": "Qaysi so'z turkumi gapda boshqa so'z turkumlari o'rnida almashinib keladi?",
+      "options": ["Olmosh", "Modal so'z", "Undov", "Yuklama"],
+      "correct_answer": 0,
+      "explanation": "Olmosh ot, sifat, son va ravish o'rnida ularni ko'rsatish yoki almashtirish uchun qo'llanadi."
+    },
+    {
+      "id": "uz_09",
+      "subject": "native_language",
+      "topic": "Morfologiya",
+      "difficulty": "medium",
+      "question": "Qaratqich kelishigining qo'shimchasi qaysi?",
+      "options": ["-ni", "-ning", "-ga", "-da"],
+      "correct_answer": 1,
+      "explanation": "Qaratqich kelishigi '-ning' qo'shimchasi orqali ifodalanadi va 'kimning?', 'nimaning?' so'roqlariga javob beradi."
+    },
+    {
+      "id": "uz_10",
+      "subject": "native_language",
+      "topic": "Morfologiya",
+      "difficulty": "hard",
+      "question": "Qaysi fe'l nisbati harakatning obyekt tomonidan o'z-o'zidan bajarilishini yoki harakat o'ziga qaratilganligini ifodalaydi?",
+      "options": ["O'zlik nisbati (-in, -il)", "Majhul nisbat", "Orttirma nisbat", "Birgalik nisbati"],
+      "correct_answer": 0,
+      "explanation": "O'zlik nisbati harakatning subyektning o'zi ustida bajarilishini bildiradi (masalan: kiyindi, tarandi)."
+    },
+    {
+      "id": "uz_11",
+      "subject": "native_language",
+      "topic": "Sintaksis",
+      "difficulty": "easy",
+      "question": "Gapning markaziy grammatik bo'laklari (bosh bo'laklar) qaysilar?",
+      "options": ["Ega va kesim", "Ega va to'ldiruvchi", "Hol va aniqlovchi", "Kesim va hol"],
+      "correct_answer": 0,
+      "explanation": "Grammatik asosi hisoblangan asosiy bo'laklar Ega va Kesimdir."
+    },
+    {
+      "id": "uz_12",
+      "subject": "native_language",
+      "topic": "Sintaksis",
+      "difficulty": "medium",
+      "question": "Qaratqichli birikmada tobe so'z qaysi gap bo'lagi vazifasida keladi?",
+      "options": ["To'ldiruvchi", "Qaratqichli aniqlovchi", "Hol", "Kesim"],
+      "correct_answer": 1,
+      "explanation": "Qaratqich kelishigi shaklidagi so'z hokim otga bog'lanib, gapda 'qaratqichli aniqlovchi' vazifasini bajaradi (maktabning bog'i)."
+    },
+    {
+      "id": "uz_13",
+      "subject": "native_language",
+      "topic": "Tinish belgilari",
+      "difficulty": "medium",
+      "question": "Ega va kesim ot yoki son bilan ifodalanganda, ular orasida qanday tinish belgisi qo'yiladi?",
+      "options": ["Vergul", "Tire", "Ikki nuqta", "Nuqtali vergul"],
+      "correct_answer": 1,
+      "explanation": "Ega ham, kesim ham bosh kelishikdagi ot yoki son bilan ifodalanib, bog'lama bo'lmaganda ular o'rtasiga tire qo'yiladi (Kitob — bilim manbai)."
+    },
+    {
+      "id": "uz_14",
+      "subject": "native_language",
+      "topic": "Tinish belgilari",
+      "difficulty": "hard",
+      "question": "Umumlashtiruvchi so'z uyushiq bo'laklardan oldin kelsa, undan keyin qanday tinish belgisi qo'yiladi?",
+      "options": ["Tire", "Ikki nuqta", "Vergul", "Qavs"],
+      "correct_answer": 1,
+      "explanation": "Umumlashtiruvchi so'z uyushiq bo'laklardan oldin kelsa — ikki nuqta (:), uyushiq bo'laklardan keyin kelsa — tire (—) qo'yiladi."
+    },
+    {
+      "id": "uz_15",
+      "subject": "native_language",
+      "topic": "Uslubiyat",
+      "difficulty": "medium",
+      "question": "Rasmiy hujjatlar, qonunlar, arizalar qaysi nutq uslubiga xos?",
+      "options": ["Badiiy uslub", "Ilmiy uslub", "Rasmiy-idoraviy uslub", "Publitsistik uslub"],
+      "correct_answer": 2,
+      "explanation": "Davlat idoralari hujjatlari, farmonlar, nizomlar va arizalar Rasmiy-idoraviy uslubda yoziladi va qat'iy standart shaklga ega."
+    },
+    {
+      "id": "uz_16",
+      "subject": "native_language",
+      "topic": "Adabiy til me'yorlari",
+      "difficulty": "medium",
+      "question": "Qaysi jumlada so'z qo'llash bilan bog'liq uslubiy xatoga yo'l qo'yilgan?",
+      "options": [
+        "U darsga juda kech keldi.",
+        "Majlisda muhim masalalar ko'rib chiqildi.",
+        "Biz o'zaro o'rtamizda kelishib oldik.",
+        "Ushbu kitob talabalar uchun mo'ljallangan."
+      ],
+      "correct_answer": 2,
+      "explanation": "'O'zaro' va 'o'rtamizda' so'zlari ayni bir ma'noni ifodalaydi. Birgalikda qo'llanishi pleonazm (ortiqcha takror) hisoblanadi."
+    },
+    {
+      "id": "uz_17",
+      "subject": "native_language",
+      "topic": "Morfologiya",
+      "difficulty": "easy",
+      "question": "Qaysi so'z yasovchi qo'shimcha yangi ot yasaydi?",
+      "options": ["-chi (masalan: temirchi)", "-roq", "-lar", "-dek"],
+      "correct_answer": 0,
+      "explanation": "'-chi' qo'shimchasi shaxs oti yasovchi affiks hisoblanadi (temirchi, ishchi, tilchi)."
+    },
+    {
+      "id": "uz_18",
+      "subject": "native_language",
+      "topic": "Sintaksis",
+      "difficulty": "hard",
+      "question": "Qo'shma gapning qismlari teng huquqli bo'lsa, bunday qo'shma gap qanday ataladi?",
+      "options": ["Bog'langan qo'shma gap", "Ergashgan qo'shma gap", "Sodda gap", "So'z-gap"],
+      "correct_answer": 0,
+      "explanation": "O'zaro teng huquqli mustaqil sodda gaplarning teng bog'lovchilar orqali birikishidan Bog'langan qo'shma gap hosil bo'ladi."
+    },
+    {
+      "id": "uz_19",
+      "subject": "native_language",
+      "topic": "Frazeologiya",
+      "difficulty": "easy",
+      "question": "'Yuragi qinidan chiqmoq' iborasi qanday holatni ifodalaydi?",
+      "options": ["Juda quvonish yoki kuchli hayajonlanish/qo'rqish", "G'azablanish", "Kasal bo'lish", "Uxlab qolish"],
+      "correct_answer": 0,
+      "explanation": "Bu ibora kuchli hayajon, haddan tashqari xavotir yoki qattiq qo'rquv holatini ifodalashda ishlatiladi."
+    },
+    {
+      "id": "uz_20",
+      "subject": "native_language",
+      "topic": "Imlo qoidalari",
+      "difficulty": "medium",
+      "question": "Qaysi so'z tutuq belgisi (') bilan to'g'ri yozilgan?",
+      "options": ["Mo'jiza", "M'uzey", "Mav'zu", "Te'atr"],
+      "correct_answer": 0,
+      "explanation": "'Moʻjiza', 'taʼlim', 'eʼtibor' kabi o'zlashma so'zlarda unlini cho'zib aytish yoki bo'g'in ajratish uchun tutuq belgisi to'g'ri ishlatiladi."
+    }
+  ]
+}

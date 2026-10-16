@@ -1,0 +1,251 @@
+/* ====================================================================
+   DESTINATIONS PAGE STYLES (destinations.css)
+   ==================================================================== */
+
+/* =========================
+   1. HERO BANNER
+   ========================= */
+.destinations-hero {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=80") no-repeat center center / cover;
+  padding: 80px 0 90px 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.destinations-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.88) 100%);
+}
+
+.destinations-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.page-title {
+  color: var(--white);
+  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  margin-bottom: 16px;
+}
+
+.page-subtitle {
+  color: #E2E8F0;
+  font-size: 1.15rem;
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+/* Search Bar in Hero */
+.dest-search-bar {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.dest-search-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: var(--radius-full);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  padding: 6px 12px 6px 20px;
+}
+
+.search-icon {
+  color: var(--text-light);
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.dest-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark);
+  outline: none;
+}
+
+.clear-search-btn {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  display: none;
+}
+
+.clear-search-btn:hover {
+  color: var(--dark);
+}
+
+/* =========================
+   2. FILTER & CONTROLS
+   ========================= */
+.filter-section {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: var(--header-height);
+  z-index: 50;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tab-btn {
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--background);
+  border: 1px solid var(--border);
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.tab-btn.active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  box-shadow: 0 4px 10px rgba(15, 118, 110, 0.25);
+}
+
+.filter-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.results-counter {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.sort-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.sort-select {
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark);
+  cursor: pointer;
+  outline: none;
+}
+
+.sort-select:focus {
+  border-color: var(--primary);
+}
+
+/* =========================
+   3. DESTINATIONS LISTING
+   ========================= */
+.destinations-listing-section {
+  padding: 50px 0 90px 0;
+  min-height: 50vh;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.empty-state svg {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .destinations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+  .filter-actions {
+    justify-content: space-between;
+  }
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+  .filter-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .sort-select-wrap {
+    justify-content: space-between;
+  }
+}

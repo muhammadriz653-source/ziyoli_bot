@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxsus Tur Paketlari - Xalqaro Sayohatlar | TravelUX</title>
+  <meta name="description" content="Eng yaxshi tur paketlari: parvoz, hashamatli mehmonxona, nonushtalar, ekskursiyalar va gid xizmati bilan tayyor sayohatlar. Narxlar va chegirmalar.">
+  
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="tour-packages.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER & NAVIGATION
+       ========================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="../../index.html" class="brand-logo" aria-label="TravelUX Bosh sahifa">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        </span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+
+      <!-- Dinamik Render Qilinadigan Navbar -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Asosiy menyu"></nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="fav-nav-btn" id="open-favorites-btn" aria-label="Sevimlilar ro'yxati" title="Saqlanganlar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span class="favorites-badge-count">0</span>
+        </button>
+
+        <a href="../06-trip-planner/trip-planner.html" class="btn btn-primary btn-sm">
+          <span>Reja Tuzish</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Mobil menyu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu-drawer" id="mobile-drawer">
+    <div class="mobile-menu-header">
+      <a href="../../index.html" class="brand-logo">
+        <span class="logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+      <button class="drawer-close-btn" id="close-mobile-menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav"></div>
+  </div>
+
+  <main>
+    <!-- =========================
+         PAGE HERO BANNER
+         ========================= -->
+    <section class="packages-hero">
+      <div class="packages-hero-overlay"></div>
+      <div class="container packages-hero-container">
+        <span class="hero-tag">To'liq Tashkillashtirilgan</span>
+        <h1 class="page-title">Featured Travel Packages</h1>
+        <p class="page-subtitle">
+          Aviachipta, 4* va 5* darajali mehmonxona, nonushta, shaxsiy transfer va professional gid xizmati kiritilgan tayyor tur paketlari.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================
+         FILTER & SEARCH TOOLBAR
+         ========================= -->
+    <section class="packages-filter-bar">
+      <div class="container">
+        <div class="filter-card">
+          <div class="filter-grid">
+            <!-- Search by Name/Destination -->
+            <div class="filter-field">
+              <label class="filter-label" for="pkg-search">Qidiruv</label>
+              <input 
+                type="text" 
+                id="pkg-search" 
+                class="form-control" 
+                placeholder="Tur nomi yoki shahar..."
+              >
+            </div>
+
+            <!-- Destination Filter -->
+            <div class="filter-field">
+              <label class="filter-label" for="filter-destination">Destination (Shahar)</label>
+              <select id="filter-destination" class="form-control">
+                <option value="all">Barcha Shaharlar</option>
+                <option value="Paris">Paris, France</option>
+                <option value="Dubai">Dubai, UAE</option>
+                <option value="Istanbul">Istanbul, Turkey</option>
+                <option value="Tokyo">Tokyo, Japan</option>
+                <option value="Bali">Bali, Indonesia</option>
+                <option value="Rome">Rome, Italy</option>
+                <option value="London">London, UK</option>
+                <option value="Maldives">Maldives</option>
+              </select>
+            </div>
+
+            <!-- Duration Filter -->
+            <div class="filter-field">
+              <label class="filter-label" for="filter-duration">Duration (Davomiyligi)</label>
+              <select id="filter-duration" class="form-control">
+                <option value="all">Barcha Muddatlar</option>
+                <option value="short">Qisqa (3 - 5 kun)</option>
+                <option value="medium">O'rtacha (6 - 7 kun)</option>
+                <option value="long">Uzoq (8+ kun)</option>
+              </select>
+            </div>
+
+            <!-- Price Filter -->
+            <div class="filter-field">
+              <label class="filter-label" for="filter-price">Price (Byudjet)</label>
+              <select id="filter-price" class="form-control">
+                <option value="all">Barcha Narxlar</option>
+                <option value="under-800">$800 gacha</option>
+                <option value="800-1200">$800 - $1200</option>
+                <option value="above-1200">$1200 dan yuqori</option>
+              </select>
+            </div>
+
+            <!-- Sort By -->
+            <div class="filter-field">
+              <label class="filter-label" for="pkg-sort">Sort (Saralash)</label>
+              <select id="pkg-sort" class="form-control">
+                <option value="popular">Popular (Ommabop)</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Rating (Reyting)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info line -->
+        <div class="packages-status-line">
+          <span class="status-counter" id="packages-count">Yuklanmoqda...</span>
+          <button type="button" class="reset-link-btn" id="pkg-reset-btn">Barcha Filtrlarni Tozalash</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PACKAGES GRID
+         ========================= -->
+    <section class="packages-catalog-section">
+      <div class="container">
+        <div class="packages-grid" id="packages-catalog-grid">
+          <!-- Dinamik ravishda render qilinadi -->
+        </div>
+
+        <!-- Empty state -->
+        <div class="empty-state" id="packages-empty-state" style="display: none;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          <h3>Mos keluvchi tur paket topilmadi</h3>
+          <p>Iltimos, boshqa parametrlarni tanlang yoki qidiruv so'zini o'zgartiring.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       PACKAGE DETAILS & BOOKING MODAL
+       ========================= -->
+  <div class="modal-overlay" id="package-modal">
+    <div class="modal-content" style="max-width: 640px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-pkg-title">Tur Paketini Bron Qilish</h3>
+        <button class="modal-close-btn" id="close-pkg-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-pkg-summary" id="modal-pkg-summary">
+          <!-- Summary info injected via JS -->
+        </div>
+
+        <form id="pkg-booking-form">
+          <input type="hidden" id="modal-pkg-id">
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="pkg-book-name">Ismingiz *</label>
+              <input type="text" id="pkg-book-name" class="form-control" placeholder="Jamshid Karimov" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="pkg-book-phone">Telefon Raqamingiz *</label>
+              <input type="tel" id="pkg-book-phone" class="form-control" placeholder="+998 90 123 45 67" required>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="pkg-book-date">Jo'nab Ketish Sanasi *</label>
+              <input type="date" id="pkg-book-date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="pkg-book-travelers">Sayohatchilar Soni</label>
+              <select id="pkg-book-travelers" class="form-control">
+                <option value="1">1 Kishi</option>
+                <option value="2" selected>2 Kishi</option>
+                <option value="3">3 Kishi</option>
+                <option value="4">4 Kishi</option>
+                <option value="5">5+ Kishi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-pricing-box">
+            <div class="price-row">
+              <span>Tur paketi narxi:</span>
+              <span id="modal-calc-unit-price">$0</span>
+            </div>
+            <div class="price-row">
+              <span>Sayohatchilar ko'paytmasi:</span>
+              <span id="modal-calc-multiplier">x 2</span>
+            </div>
+            <div class="price-divider"></div>
+            <div class="price-row total-row">
+              <span>Umumiy Taxminiy Qiymat:</span>
+              <span id="modal-calc-total">$0</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 16px;">
+            Buyurtmani Tasdiqlash
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand-logo">
+            <span class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+            <span>Travel<span class="accent-text">UX</span></span>
+          </a>
+          <p>Dunyodagi eng sara sayohat paketlari. Ishonchli, qulay va chegirmali narxlar.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../02-destinations/destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="tour-packages.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="../05-hotels/hotels.html" class="footer-link">Hotels</a></li>
+            <li><a href="../06-trip-planner/trip-planner.html" class="footer-link">Trip Planner</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html" class="footer-link">About Us</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact</a></li>
+            <li><a href="../07-about/about.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html#faq" class="footer-link">Help Center</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Travel Website. All rights reserved.</p>
+        <p>Featured Travel Packages Catalog</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Yuqoriga qaytish">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="../../assets/js/travel-data.js"></script>
+  <script src="tour-packages.js"></script>
+</body>
+</html>

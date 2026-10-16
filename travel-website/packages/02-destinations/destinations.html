@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayohat Yo'nalishlari - Mashhur Shaharlar va Davlatlar | TravelUX</title>
+  <meta name="description" content="Dunyodagi eng mashhur shaharlar, sayohat yo'nalishlari, narxlar va diqqatga sazovor joylar katalogi. Qit'alar bo'yicha saralash va qidiruv.">
+  
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER & NAVIGATION
+       ========================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="../../index.html" class="brand-logo" aria-label="TravelUX Bosh sahifa">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        </span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+
+      <!-- Dinamik Render Qilinadigan Navbar -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Asosiy menyu"></nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="fav-nav-btn" id="open-favorites-btn" aria-label="Sevimlilar ro'yxati" title="Saqlanganlar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span class="favorites-badge-count">0</span>
+        </button>
+
+        <a href="../06-trip-planner/trip-planner.html" class="btn btn-primary btn-sm">
+          <span>Reja Tuzish</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Mobil menyu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu-drawer" id="mobile-drawer">
+    <div class="mobile-menu-header">
+      <a href="../../index.html" class="brand-logo">
+        <span class="logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+      <button class="drawer-close-btn" id="close-mobile-menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav"></div>
+  </div>
+
+  <main>
+    <!-- =========================
+         PAGE HERO BANNER
+         ========================= -->
+    <section class="destinations-hero">
+      <div class="destinations-hero-overlay"></div>
+      <div class="container destinations-hero-container">
+        <span class="hero-tag">Dunyo Xaritasi</span>
+        <h1 class="page-title">Sayohat Yo'nalishlari</h1>
+        <p class="page-subtitle">
+          Qadimiy Yevropa me'morchiligi, Osiyoning futuristik shaharlari, sharqona joziba va tropik orollar.
+        </p>
+
+        <!-- Live Search Bar -->
+        <div class="dest-search-bar">
+          <div class="dest-search-input-wrap">
+            <svg class="search-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input 
+              type="text" 
+              id="search-input" 
+              class="dest-search-input" 
+              placeholder="Shahar yoki davlat nomini yozing (masalan: Paris, Dubai, Turkiya)..."
+              autocomplete="off"
+            >
+            <button type="button" id="clear-search-btn" class="clear-search-btn" title="Tozalash">&times;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FILTER & CONTROLS BAR
+         ========================= -->
+    <section class="filter-section">
+      <div class="container filter-container">
+        <!-- Filter Tabs: All, Europe, Asia, Middle East, America, Africa -->
+        <div class="category-tabs" id="category-tabs">
+          <button class="tab-btn active" data-category="All">Barchasi (All)</button>
+          <button class="tab-btn" data-category="Europe">Yevropa</button>
+          <button class="tab-btn" data-category="Asia">Osiyo</button>
+          <button class="tab-btn" data-category="Middle East">Yaqin Sharq</button>
+          <button class="tab-btn" data-category="America">Amerika</button>
+          <button class="tab-btn" data-category="Africa">Afrika</button>
+        </div>
+
+        <!-- Sort & Counter Bar -->
+        <div class="filter-actions">
+          <span class="results-counter" id="results-count">Yuklanmoqda...</span>
+          <div class="sort-select-wrap">
+            <label for="sort-select" class="sort-label">Saralash:</label>
+            <select id="sort-select" class="sort-select">
+              <option value="popular">Ommabopligi bo'yicha</option>
+              <option value="price-asc">Narx: Arzondan qimmatga</option>
+              <option value="price-desc">Narx: Qimmatdan arzonga</option>
+              <option value="rating">Reyting bo'yicha (Yuqori)</option>
+              <option value="name">Nomi bo'yicha (A-Z)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         DESTINATIONS GRID
+         ========================= -->
+    <section class="destinations-listing-section">
+      <div class="container">
+        <div class="destinations-grid" id="destinations-grid">
+          <!-- Dinamik ravishda render qilinadi -->
+        </div>
+
+        <!-- Empty state -->
+        <div class="empty-state" id="empty-state" style="display: none;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <h3>Hech qanday manzil topilmadi</h3>
+          <p>Iltimos, boshqa qidiruv so'zini sinab ko'ring yoki filtrlarni tozalang.</p>
+          <button class="btn btn-outline" id="reset-filters-btn">Filtrlarni Qaytarish</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand-logo">
+            <span class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+            <span>Travel<span class="accent-text">UX</span></span>
+          </a>
+          <p>Eng ishonchli xalqaro sayohat portali. 120 dan ortiq mashhur yo'nalishlar sizni kutmoqda.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="../04-tour-packages/tour-packages.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="../05-hotels/hotels.html" class="footer-link">Hotels</a></li>
+            <li><a href="../06-trip-planner/trip-planner.html" class="footer-link">Travel Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html" class="footer-link">About Us</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html#faq" class="footer-link">Help Center</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Travel Website. All rights reserved.</p>
+        <p>Premium Sayohat Yo'nalishlari Katalogi</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Yuqoriga qaytish">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="../../assets/js/travel-data.js"></script>
+  <script src="destinations.js"></script>
+</body>
+</html>

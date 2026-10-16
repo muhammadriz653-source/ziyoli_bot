@@ -1,0 +1,211 @@
+{
+  "subject_name": "Biologiya",
+  "subject_code": "biology",
+  "questions": [
+    {
+      "id": "bio_01",
+      "subject": "biology",
+      "topic": "Hujayra va uning tuzilishi",
+      "difficulty": "easy",
+      "question": "Hujayrada oqsil biosintezini amalga oshiruvchi asosiy organoid qaysi?",
+      "options": ["Ribosoma", "Lizosoma", "Mitoxondriya", "Vakuola"],
+      "correct_answer": 0,
+      "explanation": "Ribosomalar barcha tirik hujayralarda oqsillarni sintez qilish vazifasini bajaruvchi membrana bilan o'ralmagan organoidlardir."
+    },
+    {
+      "id": "bio_02",
+      "subject": "biology",
+      "topic": "Hujayra va uning tuzilishi",
+      "difficulty": "medium",
+      "question": "Hujayraning 'energiya stansiyasi' deb qaysi organoid ataladi va u qanday modda sintezlaydi?",
+      "options": ["Mitoxondriya — ATF sintezlaydi", "Goldji majmuasi — lipidlar", "Lizosoma — fermentlar", "Yadro — xromosoma"],
+      "correct_answer": 0,
+      "explanation": "Mitoxondriyalar hujayra nafas olishida qatnashadi va organik moddalarni oksidlab biologik energiya manbai bo'lgan ATF (adenozintrifosfat) sintezlaydi."
+    },
+    {
+      "id": "bio_03",
+      "subject": "biology",
+      "topic": "Botanika",
+      "difficulty": "easy",
+      "question": "O'simliklar quyosh nuri ta'sirida karbonat angidrid va suvdan organik moddalar hosil qilish jarayoni nima deb ataladi?",
+      "options": ["Fotosintez", "Xemosintez", "Transpiratsiya", "Guttatsiya"],
+      "correct_answer": 0,
+      "explanation": "Fotosintez — xlorofill pigmenti yordamida yorug'lik energiyasi hisobiga noorganik moddalardan (CO₂ va H₂O) glyukoza va erkin kislorod hosil bo'lish jarayonidir."
+    },
+    {
+      "id": "bio_04",
+      "subject": "biology",
+      "topic": "Botanika",
+      "difficulty": "medium",
+      "question": "O'simliklarda suv va unda erigan mineral tuzlarning ildizdan barglarga qarab harakatlanishini ta'minlovchi to'qima qaysi?",
+      "options": ["Ksilema (naylar)", "Floema (elaksimon naylar)", "Kambiy", "Periderma"],
+      "correct_answer": 0,
+      "explanation": "Ksilema (yog'ochlik) o'simlik bo'ylab suv va mineral moddalarni pastdan yuqoriga (ko'tariluvchi oqim) o'tkazadi."
+    },
+    {
+      "id": "bio_05",
+      "subject": "biology",
+      "topic": "Zoologiya",
+      "difficulty": "easy",
+      "question": "Bo'g'imoyoqlilar tipining qaysi sinfiga 6 ta yurish oyog'i bo'lishi xos?",
+      "options": ["Hasharotlar", "O'rgimchaksimonlar", "Qisqichbaqasimonlar", "Ko'poyoqlilar"],
+      "correct_answer": 0,
+      "explanation": "Hasharotlar sinfi vakillarining ko'krak qismida 3 juft, ya'ni jami 6 ta yurish oyog'i bo'ladi. O'rgimchaklarda 4 juft (8 ta), qisqichbaqalarda 5 juft (10 ta) bo'ladi."
+    },
+    {
+      "id": "bio_06",
+      "subject": "biology",
+      "topic": "Zoologiya",
+      "difficulty": "medium",
+      "question": "Qushlar va sutemizuvchilarning yuragi necha kamerali tuzilgan?",
+      "options": ["4 kamerali (2 ta bo'lmacha, 2 ta qorincha)", "3 kamerali", "2 kamerali", "3 kamerali to'liq bo'lmagan to'siq bilan"],
+      "correct_answer": 0,
+      "explanation": "Qushlar va sutemizuvchilar issiqqonli hayvonlar bo'lib, ularning yuragi to'liq ajratilgan 4 kamerali (ikkita bo'lmacha va ikkita qorincha) tuzilishga ega."
+    },
+    {
+      "id": "bio_07",
+      "subject": "biology",
+      "topic": "Odam anatomiyasi va fiziologiyasi",
+      "difficulty": "easy",
+      "question": "Odam qonidagi qaysi hujayralar kislorod va karbonat angidridni tashish vazifasini bajaradi?",
+      "options": ["Eritrotsitlar", "Leykotsitlar", "Trombotsitlar", "Plazma oqsillari"],
+      "correct_answer": 0,
+      "explanation": "Eritrotsitlar tarkibida gemoglobin oqsili bo'lib, u o'pkadan to'qimalarga kislorod, to'qimalardan esa CO₂ ni olib keladi."
+    },
+    {
+      "id": "bio_08",
+      "subject": "biology",
+      "topic": "Odam anatomiyasi va fiziologiyasi",
+      "difficulty": "medium",
+      "question": "Odam organizmida qand (glyukoza) miqdorini kamaytiruvchi insulin gormonini qaysi bez ishlab chiqaradi?",
+      "options": ["Oshqozon osti bezi", "Qalqonsimon bez", "Buyrak usti bezi", "Gipofiz"],
+      "correct_answer": 0,
+      "explanation": "Oshqozon osti bezining Langergans orolchalari beta-hujayralari qondagi glyukoza darajasini pasaytiruvchi 'insulin' gormonini sintezlaydi."
+    },
+    {
+      "id": "bio_09",
+      "subject": "biology",
+      "topic": "Odam anatomiyasi va fiziologiyasi",
+      "difficulty": "hard",
+      "question": "Odamning bosh miyasida nafas olish, qon bosimi, yutinish va qusish kabi hayotiy reflekslar markazi qayerda joylashgan?",
+      "options": ["Uzunchoq miyada", "Miyachada", "Katta yarimsharlar po'stlog'ida", "Oraliq miyada"],
+      "correct_answer": 0,
+      "explanation": "Uzunchoq miya vegetativ va hayot uchun o'ta zarur reflekslar (yurak urishi, nafas olish, aksirish, yutinish) markazi hisoblanadi."
+    },
+    {
+      "id": "bio_10",
+      "subject": "biology",
+      "topic": "Genetika",
+      "difficulty": "easy",
+      "question": "Irsiyat va o'zgaruvchanlik haqidagi fanga kim asos solgan?",
+      "options": ["Gregor Mendel", "Charlz Darvin", "Lui Paster", "Robert Guk"],
+      "correct_answer": 0,
+      "explanation": "Avstriyalik olim Gregor Mendel no'xat o'simligida o'tkazgan tajribalari orqali 1865-yilda irsiyat qonuniyatlarini kashf etib, genetikaga asos solgan."
+    },
+    {
+      "id": "bio_11",
+      "subject": "biology",
+      "topic": "Genetika",
+      "difficulty": "medium",
+      "question": "Sog'lom odam somatik (tana) hujayrasidagi xromosomalar to'plami nechta?",
+      "options": ["46 ta (23 juft)", "23 ta", "48 ta (24 juft)", "44 ta"],
+      "correct_answer": 0,
+      "explanation": "Odamning tana hujayralarida diploid (2n) to'plam bo'lib, jami 46 ta (22 juft autosoma va 1 juft jinsiy xromosoma) mavjud."
+    },
+    {
+      "id": "bio_12",
+      "subject": "biology",
+      "topic": "Genetika",
+      "difficulty": "hard",
+      "question": "DNK molekulasida komplementarlik qoidasiga ko'ra Adenin (A) qarshisida qaysi azot asosi turadi?",
+      "options": ["Timin (T)", "Guanin (G)", "Sitozin (S)", "Urasil (U)"],
+      "correct_answer": 0,
+      "explanation": "DNK qo'sh spirali zanjirlarida komplementarlik bo'yicha Adenin doimo Timin bilan (A=T), Guanin esa Sitozin bilan (G≡S) vodorod bog'i hosil qiladi."
+    },
+    {
+      "id": "bio_13",
+      "subject": "biology",
+      "topic": "Ekologiya",
+      "difficulty": "easy",
+      "question": "Ekologik piramidada organik moddalarni noorganik moddalardan hosil qiluvchi avtotrof organizmlar qanday ataladi?",
+      "options": ["Produtsentlar", "Konsumentlar", "Redutsentlar", "Parazitlar"],
+      "correct_answer": 0,
+      "explanation": "Produtsentlar (yashil o'simliklar, sianobakteriyalar) noorganik moddalardan birlamchi organik biomassani sintezlovchi organizmlardir."
+    },
+    {
+      "id": "bio_14",
+      "subject": "biology",
+      "topic": "Ekologiya",
+      "difficulty": "medium",
+      "question": "O'lik organik qoldiqlarni (chirindilarni) maydalab, mineral birikmalarga aylantiruvchi bakteriya va zamburug'lar qanday ataladi?",
+      "options": ["Redutsentlar", "Produtsentlar", "I tartib konsumentlar", "Yirtqichlar"],
+      "correct_answer": 0,
+      "explanation": "Redutsentlar (destruktorlar) o'lik organik moddalarni minerallash tirib, moddalar aylanma harakatini ta'minlaydi."
+    },
+    {
+      "id": "bio_15",
+      "subject": "biology",
+      "topic": "Evolyutsiya",
+      "difficulty": "medium",
+      "question": "Evolyutsiyaning harakatlantiruvchi asosiy omillari qaysilar deb Charlz Darvin ko'rsatgan?",
+      "options": [
+        "Irsiy o'zgaruvchanlik, yashash uchun kurash va tabiiy tanlanish",
+        "Faqat tashqi muhitga moslashish",
+        "Mutatsiyalar va izolyatsiya",
+        "O'z-o'zini rivojlantirishga intilish"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ch. Darvin ta'limotiga ko'ra evolyutsiyaning asosiy harakatlantiruvchi kuchlari: irsiy o'zgaruvchanlik, yashash uchun kurash va tabiiy tanlanishdir."
+    },
+    {
+      "id": "bio_16",
+      "subject": "biology",
+      "topic": "Biologik atamalar",
+      "difficulty": "easy",
+      "question": "Organizmlarning ichki muhiti (tana harorati, qon tarkibi, pH) barqarorligini saqlash xususiyati nima deb ataladi?",
+      "options": ["Gomeostaz", "Metabolizm", "Ontogenez", "Filogenez"],
+      "correct_answer": 0,
+      "explanation": "Gomeostaz — tirik organizm ichki muhiti ko'rsatkichlarining dinamik nisbiy doimiyligini saqlash qobiliyatidir."
+    },
+    {
+      "id": "bio_17",
+      "subject": "biology",
+      "topic": "Hujayra va uning tuzilishi",
+      "difficulty": "medium",
+      "question": "Hujayra bo'linishining qaysi turida xromosomalar soni ikki barobar qisqaradi (reduksiyalanadi)?",
+      "options": ["Meyoz", "Mitoz", "Amitoz", "Shizogoniya"],
+      "correct_answer": 0,
+      "explanation": "Meyoz bo'linishi natijasida jinsiy hujayralar (gametalar) hosil bo'ladi va xromosomalar soni 2n dan n ga kamayadi."
+    },
+    {
+      "id": "bio_18",
+      "subject": "biology",
+      "topic": "Odam anatomiyasi va fiziologiyasi",
+      "difficulty": "easy",
+      "question": "Odam tanasidagi eng yirik ichki a'zo va boshqa toksinlarni zararsizlantiruvchi laboratoriya qaysi?",
+      "options": ["Jigar", "Oshqozon", "Buyrak", "Taloq"],
+      "correct_answer": 0,
+      "explanation": "Jigar odam tanasidagi eng katta ichki a'zo bo'lib, tozalash (dezintoksikatsiya), o't suyuqligi ishlab chiqarish va glikogen saqlash kabi 500 dan ortiq funksiyalarni bajaradi."
+    },
+    {
+      "id": "bio_19",
+      "subject": "biology",
+      "topic": "Biologik atamalar",
+      "difficulty": "medium",
+      "question": "Bir hujayrali va yadrosiz (hujayra yadrosiga ega bo'lmagan) organizmlar guruhi qanday ataladi?",
+      "options": ["Prokariotlar", "Eukariotlar", "Viruslar", "Lixenlar"],
+      "correct_answer": 0,
+      "explanation": "Shakllangan yadroga ega bo'lmagan organizmlar (bakteriyalar, ko'k-yashil suvo'tlar) Prokariotlar deb ataladi."
+    },
+    {
+      "id": "bio_20",
+      "subject": "biology",
+      "topic": "Ekologiya",
+      "difficulty": "medium",
+      "question": "Tirik organizmlarning bir-biriga o'zaro foyda keltirib birga yashashi (masalan, zamburug' va suvo't birikmasi — lishaynik) nima deyiladi?",
+      "options": ["Simbioz (mutualizm)", "Parazitizm", "Kommensalizm", "Yirtqichlik"],
+      "correct_answer": 0,
+      "explanation": "Simbioz — ikki yoki undan ortiq xil organizmlarning o'zaro foydali va uzviy hamkorlikda birga yashash shaklidir."
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelUX - Discover the World, One Journey at a Time | Xalqaro Sayohat Platformasi</title>
+  <meta name="description" content="Chet elga sayohat qilish, mashhur shaharlar, hashamatli mehmonxonalar, maxsus tur paketlari va sayohat byudjetini hisoblash platformasi.">
+  <meta name="keywords" content="sayohat, turizm, aviachiptalar, mehmonxonalar, tur paketlar, dubai, parij, tokyo, bali, istanbul">
+  
+  <!-- Global & Page Stylesheets -->
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER & NAVIGATION
+       ========================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="../../index.html" class="brand-logo" aria-label="TravelUX Bosh sahifa">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        </span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+
+      <!-- Dinamik Render Qilinadigan Navbar -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Asosiy menyu">
+        <!-- JavaScript orqali generatsiya qilinadi -->
+      </nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="fav-nav-btn" id="open-favorites-btn" aria-label="Sevimlilar ro'yxati" title="Saqlanganlar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span class="favorites-badge-count">0</span>
+        </button>
+
+        <a href="../06-trip-planner/trip-planner.html" class="btn btn-primary btn-sm">
+          <span>Reja Tuzish</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Mobil menyuni ochish">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu-drawer" id="mobile-drawer">
+    <div class="mobile-menu-header">
+      <a href="../../index.html" class="brand-logo">
+        <span class="logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+        </span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+      <button class="drawer-close-btn" id="close-mobile-menu" aria-label="Menyuni yopish">&times;</button>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav">
+      <!-- Dinamik nav linklar -->
+    </div>
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border);">
+      <a href="../06-trip-planner/trip-planner.html" class="btn btn-primary" style="width: 100%;">
+        Sayohat Byudjetini Hisoblash
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================
+         1. HERO SECTION
+         ========================= -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            2026-Yilning Eng Yaxshi Sayohat Hamkori
+          </span>
+          <h1 class="hero-title">Discover the World, One Journey at a Time</h1>
+          <p class="hero-subtitle">
+            Explore amazing destinations, plan unforgettable trips and discover the best places around the world.
+          </p>
+
+          <!-- Interactive Search Panel -->
+          <div class="search-panel-wrapper">
+            <form class="search-panel" id="hero-search-form">
+              <!-- Destination -->
+              <div class="search-field">
+                <label for="search-destination" class="search-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Destination</span>
+                </label>
+                <select id="search-destination" class="search-input">
+                  <option value="">Qayerga borishni xohlaysiz?</option>
+                  <option value="Paris">Paris, France</option>
+                  <option value="Dubai">Dubai, UAE</option>
+                  <option value="Istanbul">Istanbul, Turkey</option>
+                  <option value="Tokyo">Tokyo, Japan</option>
+                  <option value="Bali">Bali, Indonesia</option>
+                  <option value="Rome">Rome, Italy</option>
+                  <option value="London">London, UK</option>
+                  <option value="Maldives">Maldives</option>
+                </select>
+              </div>
+
+              <!-- Check-in -->
+              <div class="search-field">
+                <label for="search-checkin" class="search-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <span>Check-in</span>
+                </label>
+                <input type="date" id="search-checkin" class="search-input">
+              </div>
+
+              <!-- Check-out -->
+              <div class="search-field">
+                <label for="search-checkout" class="search-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <span>Check-out</span>
+                </label>
+                <input type="date" id="search-checkout" class="search-input">
+              </div>
+
+              <!-- Travelers -->
+              <div class="search-field">
+                <label for="search-travelers" class="search-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <span>Travelers</span>
+                </label>
+                <select id="search-travelers" class="search-input">
+                  <option value="1">1 Sayohatchi</option>
+                  <option value="2" selected>2 Sayohatchi</option>
+                  <option value="3">3 Sayohatchi</option>
+                  <option value="4">4+ Sayohatchi</option>
+                </select>
+              </div>
+
+              <!-- Submit button -->
+              <div class="search-field search-btn-field">
+                <button type="submit" class="btn btn-accent search-submit-btn" id="hero-search-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  <span>Search Trips</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         STATISTICS SECTION
+         ========================= -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Happy Travelers</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number">120+</div>
+            <div class="stat-label">Destinations</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number">350+</div>
+            <div class="stat-label">Tour Packages</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number">4.9/5</div>
+            <div class="stat-label">Traveler Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         2. POPULAR DESTINATIONS
+         ========================= -->
+    <section class="popular-destinations-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Dunyo Durdonalari</span>
+          <h2 class="section-title">Popular Destinations</h2>
+          <p class="section-subtitle">
+            Sayohatchilar tomonidan eng ko'p tanlangan, betakror tabiat va boy madaniyatga ega eng mashhur shaharlar.
+          </p>
+        </div>
+
+        <!-- Dinamik Render Qilinadigan Kartalar -->
+        <div class="destinations-grid" id="popular-destinations-container">
+          <!-- JavaScript orqali generatsiya qilinadi (Paris, Dubai, Istanbul, Tokyo, Bali, Rome, London, Maldives) -->
+        </div>
+
+        <div class="section-cta-wrap">
+          <a href="../02-destinations/destinations.html" class="btn btn-outline btn-lg">
+            <span>Barcha Yo'nalishlarni Ko'rish</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         3. FEATURED TOUR PACKAGES
+         ========================= -->
+    <section class="packages-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Maxsus Takliflar</span>
+          <h2 class="section-title">Featured Travel Packages</h2>
+          <p class="section-subtitle">
+            Aviachipta, hashamatli mehmonxona va unutilmas ekskursiyalarni o'z ichiga olgan qulay tur paketlari.
+          </p>
+        </div>
+
+        <!-- Dinamik Render Qilinadigan Tur Paketlar -->
+        <div class="packages-grid" id="featured-packages-container">
+          <!-- JavaScript orqali generatsiya qilinadi -->
+        </div>
+
+        <div class="section-cta-wrap">
+          <a href="../04-tour-packages/tour-packages.html" class="btn btn-primary btn-lg">
+            <span>Barcha Tur Paketlarni Ko'rish (350+)</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         4. TRAVEL EXPERIENCE SECTION
+         ========================= -->
+    <section class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Nega Aynan Biz?</span>
+          <h2 class="section-title">Professional Travel Experience</h2>
+          <p class="section-subtitle">
+            Biz sizning sayohatingizni xavfsiz, qulay va har bir lahzasini esda qolarli qilish uchun xizmat ko'rsatamiz.
+          </p>
+        </div>
+
+        <div class="experience-grid" id="experience-grid-container">
+          <!-- 4 Feature Cards JavaScript orqali render qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         5. HOW IT WORKS
+         ========================= -->
+    <section class="how-it-works-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Oddiy Jarayon</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">
+            Orzuingizdagi sayohatga chiqish uchun bor-yo'g'i 4 ta oson bosqichdan o'ting.
+          </p>
+        </div>
+
+        <div class="steps-grid" id="steps-container">
+          <!-- 01 - 04 Steps JavaScript orqali render qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         6. TRAVEL INSPIRATION
+         ========================= -->
+    <section class="inspiration-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Foydali Maqolalar</span>
+          <h2 class="section-title">Travel Inspiration</h2>
+          <p class="section-subtitle">
+            Sayohatchilar uchun foydali maslahatlar, shahar qo'llanmalari va byudjetni tejash sirlari.
+          </p>
+        </div>
+
+        <div class="inspiration-grid" id="inspiration-container">
+          <!-- Blog Cards JavaScript orqali render qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         7. NEWSLETTER SECTION
+         ========================= -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-content">
+            <span class="badge badge-amber" style="margin-bottom: 12px;">Eksklyuziv Chegirmalar</span>
+            <h2 class="newsletter-title">Get Travel Inspiration</h2>
+            <p class="newsletter-subtitle">
+              Subscribe and receive travel ideas, special offers and destination guides.
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+              <div class="newsletter-input-group">
+                <input 
+                  type="email" 
+                  id="newsletter-email" 
+                  class="newsletter-input" 
+                  placeholder="Elektron pochtangizni kiriting..." 
+                  required
+                >
+                <button type="submit" class="btn btn-accent newsletter-btn">
+                  <span>Subscribe</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </div>
+              <p class="newsletter-hint">Biz spam yubormaymiz. Istalgan vaqtda obunani bekor qilishingiz mumkin.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand-logo">
+            <span class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </span>
+            <span>Travel<span class="accent-text">UX</span></span>
+          </a>
+          <p>
+            Dunyoni kashf qilishning eng ishonchli, zamonaviy va qulay platformasi. Orzuingizdagi sayohatni bugunoq rejalashtiring.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../02-destinations/destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="../04-tour-packages/tour-packages.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="../05-hotels/hotels.html" class="footer-link">Hotels</a></li>
+            <li><a href="../06-trip-planner/trip-planner.html" class="footer-link">Travel Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html" class="footer-link">About Us</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Careers</a></li>
+            <li><a href="../07-about/about.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html#faq" class="footer-link">Help Center</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Terms</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Travel Website. All rights reserved.</p>
+        <p>Created with Passion for Travelers &bull; 100% Vanilla JS &amp; CSS3</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Yuqoriga qaytish">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="../../assets/js/travel-data.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biz Haqimizda - Kompaniya Missiyasi va Jamoa | TravelUX</title>
+  <meta name="description" content="TravelUX xalqaro sayohat platformasi haqida. Bizning missiyamiz, qadriyatlarimiz, ekspertlar jamoasi va mijozlarimizning samimiy fikrlari.">
+  
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER & NAVIGATION
+       ========================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="../../index.html" class="brand-logo" aria-label="TravelUX Bosh sahifa">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        </span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+
+      <!-- Dinamik Render Qilinadigan Navbar -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Asosiy menyu"></nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="fav-nav-btn" id="open-favorites-btn" aria-label="Sevimlilar ro'yxati" title="Saqlanganlar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span class="favorites-badge-count">0</span>
+        </button>
+
+        <a href="../06-trip-planner/trip-planner.html" class="btn btn-primary btn-sm">
+          <span>Reja Tuzish</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Mobil menyu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu-drawer" id="mobile-drawer">
+    <div class="mobile-menu-header">
+      <a href="../../index.html" class="brand-logo">
+        <span class="logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+      <button class="drawer-close-btn" id="close-mobile-menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav"></div>
+  </div>
+
+  <main>
+    <!-- =========================
+         PAGE HERO BANNER
+         ========================= -->
+    <section class="about-hero">
+      <div class="about-hero-overlay"></div>
+      <div class="container about-hero-container">
+        <span class="hero-tag">Bizning Tariximiz &amp; Maqsadimiz</span>
+        <h1 class="page-title">Dunyoni Birgalikda Kashf Qilamiz</h1>
+        <p class="page-subtitle">
+          Biz sayohat qilishni murakkab tashkiliy jarayondan to'liq erkin, hayajonli va esda qolarli san'at asariga aylantiruvchi zamonaviy travel-tech platformamiz.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================
+         OUR STORY & MISSION
+         ========================= -->
+    <section class="story-section">
+      <div class="container story-grid">
+        <div class="story-content">
+          <span class="section-badge">Bizning Missiyamiz</span>
+          <h2 class="section-title">Sayohatchilar Uchun Yangi Standart</h2>
+          <p class="story-paragraph">
+            TravelUX – bu shunchaki turistik agentlik emas. Biz 2022-yilda bir guruh sayohat ishqibozlari, dasturchilar va xalqaro gidlar tomonidan har bir insonga dunyo mo'jizalarini qulay, shaffof va adolatli narxlarda ochib berish maqsadida tashkil etilganmiz.
+          </p>
+          <p class="story-paragraph">
+            Biz mijozlarimizga yashirin to'lovlarsiz to'liq narxlar shaffofligi, 24/7 shaxsiy konsyerj hamrohligi va dunyoning eng yaxshi mehmonxonalari bilan bevosita shartnomalar orqali mislsiz darajadagi xavfsizlikni kafolatlaymiz.
+          </p>
+
+          <div class="story-metrics">
+            <div class="metric-item">
+              <span class="metric-num">10,000+</span>
+              <span class="metric-label">Mamnun Sayohatchilar</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num">120+</span>
+              <span class="metric-label">Faol Yo'nalishlar</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num">98.5%</span>
+              <span class="metric-label">Ijobiy Sharhlar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-image-wrap">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="TravelUX Jamoasi" class="story-image" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CORE VALUES
+         ========================= -->
+    <section class="values-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Qadriyatlarimiz</span>
+          <h2 class="section-title">Biz Amal Qiladigan 4 Asosiy Qoida</h2>
+          <p class="section-subtitle">Har bir qarorimiz va har bir mijoz bilan munosabatimiz mana shu tamoyillarga tayanadi.</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3 class="value-title">100% Ishonch &amp; Shaffoflik</h3>
+            <p class="value-desc">Hech qanday yashirin komissiya yo'q. Saytda ko'rsatilgan narx – siz to'laydigan yakuniy haqiqiy qiymatdir.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">💎</div>
+            <h3 class="value-title">Premium Sifat Nazorati</h3>
+            <p class="value-desc">Barcha tavsiya etilayotgan mehmonxona, transport va gidlar mutaxassislarimiz tomonidan shaxsan tekshiriladi.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🛡️</div>
+            <h3 class="value-title">To'liq Xavfsizlik Kafolati</h3>
+            <p class="value-desc">Xalqaro tibbiy sug'urta, litsenziyalangan aviatashuvchilar va sayohat davomida doimiy monitoring.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🌱</div>
+            <h3 class="value-title">Barqaror &amp; Mas'uliyatli Turizm</h3>
+            <p class="value-desc">Mahalliy madaniyatlarni asrash, tabiatni himoya qilish va ekologik toza sayohat tajribalarini qo'llab-quvvatlaymiz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         LEADERSHIP TEAM
+         ========================= -->
+    <section class="team-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Mutaxassislar</span>
+          <h2 class="section-title">Bizning Rahbariyat &amp; Yetakchi Gidlar</h2>
+          <p class="section-subtitle">Sayohatlaringiz mukammal o'tishi uchun tinimsiz mehnat qiluvchi professional jamoa.</p>
+        </div>
+
+        <div class="team-grid" id="team-grid-container">
+          <!-- Dinamik ravishda JS orqali render qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CUSTOMER TESTIMONIALS
+         ========================= -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Mijozlar Fikri</span>
+          <h2 class="section-title">Haqiqiy Sayohatchilar Xotiralari</h2>
+          <p class="section-subtitle">Biz bilan sayohatga chiqqan qadrdon sayohatchilarimizning samimiy taassurotlari.</p>
+        </div>
+
+        <div class="testimonials-grid" id="testimonials-grid-container">
+          <!-- Dinamik ravishda JS orqali render qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FAQ ACCORDION
+         ========================= -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header">
+          <span class="section-badge">Yordam &amp; Savollar</span>
+          <h2 class="section-title">Tez-tez Beriladigan Savollar (FAQ)</h2>
+          <p class="section-subtitle">Sayohatni rejalashtirish bo'yicha eng muhim savollarga mutaxassislarimiz javoblari.</p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion-container">
+          <!-- Dinamik ravishda JS orqali render qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT US FORM
+         ========================= -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info-col">
+          <span class="section-badge">Biz Bilan Bog'lanish</span>
+          <h2 class="section-title">Savollaringiz Bormi?</h2>
+          <p class="contact-desc">
+            Sayohat yo'nalishingiz, vizalar yoki byudjet bo'yicha bepul maslahat olish uchun bizga yozing yoki qo'ng'iroq qiling.
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="method-icon">📍</div>
+              <div>
+                <strong>Bosh Ofis Manzili:</strong>
+                <p>Toshkent shahar, Amir Temur shoh ko'chasi, 107-B bino</p>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">📞</div>
+              <div>
+                <strong>Telefon Raqam:</strong>
+                <p>+998 (71) 200-00-55 / +998 (90) 123-45-67</p>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">✉️</div>
+              <div>
+                <strong>Elektron Pochta:</strong>
+                <p>support@travelux.uz / info@travelux.uz</p>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">🕒</div>
+              <div>
+                <strong>Ish Vaqti:</strong>
+                <p>Dushanba - Shanba: 09:00 - 20:00 (Yakshanba: Onlayn konsyerj)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <div class="contact-form-card">
+            <h3 class="form-title">Xabar Yuborish</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Ismingiz *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Masalan: Sardor Aliyev" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Elektron Pochta *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="example@mail.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Mavzu</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="Masalan: Maldiv orollariga sayohat">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Xabaringiz *</label>
+                <textarea id="contact-message" class="form-control" rows="4" placeholder="O'zingizni qiziqtirgan savolni yozing..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Xabarni Yuborish
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand-logo">
+            <span class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+            <span>Travel<span class="accent-text">UX</span></span>
+          </a>
+          <p>Dunyoni kashf qilishning eng ishonchli, zamonaviy va qulay platformasi.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../02-destinations/destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="../04-tour-packages/tour-packages.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="../05-hotels/hotels.html" class="footer-link">Hotels</a></li>
+            <li><a href="../06-trip-planner/trip-planner.html" class="footer-link">Trip Planner</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#faq" class="footer-link">Help Center</a></li>
+            <li><a href="about.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#contact" class="footer-link">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Travel Website. All rights reserved.</p>
+        <p>About Us &amp; Contact Information</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Yuqoriga qaytish">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="../../assets/js/travel-data.js"></script>
+  <script src="about.js"></script>
+</body>
+</html>

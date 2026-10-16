@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehmonxonalar - Hashamatli Turar Joylar | TravelUX</title>
+  <meta name="description" content="Dunyoning eng sara 5* va 4* mehmonxonalari, kurortlari va xususiy villalari. Qulay narxlar, qulayliklar va onlayn bron qilish.">
+  
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="hotels.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER & NAVIGATION
+       ========================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="../../index.html" class="brand-logo" aria-label="TravelUX Bosh sahifa">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        </span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+
+      <!-- Dinamik Render Qilinadigan Navbar -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Asosiy menyu"></nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="fav-nav-btn" id="open-favorites-btn" aria-label="Sevimlilar ro'yxati" title="Saqlanganlar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span class="favorites-badge-count">0</span>
+        </button>
+
+        <a href="../06-trip-planner/trip-planner.html" class="btn btn-primary btn-sm">
+          <span>Reja Tuzish</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Mobil menyu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu-drawer" id="mobile-drawer">
+    <div class="mobile-menu-header">
+      <a href="../../index.html" class="brand-logo">
+        <span class="logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+      <button class="drawer-close-btn" id="close-mobile-menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav"></div>
+  </div>
+
+  <main>
+    <!-- =========================
+         HOTEL HERO & SEARCH
+         ========================= -->
+    <section class="hotels-hero">
+      <div class="hotels-hero-overlay"></div>
+      <div class="container hotels-hero-container">
+        <span class="hero-tag">Mukammal Hordiq</span>
+        <h1 class="page-title">Hashamatli &amp; Qulay Mehmonxonalar</h1>
+        <p class="page-subtitle">
+          Dunyoning eng nufuzli shaharlarida joylashgan, premium servis va ajoyib manzaraga ega mehmonxonalarni toping va bron qiling.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="hotels-search-card">
+          <form id="hotel-search-form" class="hotels-search-form">
+            <div class="hotel-search-field">
+              <label class="search-label" for="hotel-dest-input">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Destination / Hotel</span>
+              </label>
+              <input 
+                type="text" 
+                id="hotel-dest-input" 
+                class="search-input" 
+                placeholder="Shahar yoki mehmonxona nomi..."
+              >
+            </div>
+
+            <div class="hotel-search-field">
+              <label class="search-label" for="hotel-checkin">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Check-in</span>
+              </label>
+              <input type="date" id="hotel-checkin" class="search-input">
+            </div>
+
+            <div class="hotel-search-field">
+              <label class="search-label" for="hotel-checkout">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Check-out</span>
+              </label>
+              <input type="date" id="hotel-checkout" class="search-input">
+            </div>
+
+            <div class="hotel-search-field">
+              <label class="search-label" for="hotel-guests-select">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                <span>Mehmonlar</span>
+              </label>
+              <select id="hotel-guests-select" class="search-input">
+                <option value="1">1 Mehmon, 1 Xona</option>
+                <option value="2" selected>2 Mehmon, 1 Xona</option>
+                <option value="3">3 Mehmon, 2 Xona</option>
+                <option value="4">4+ Mehmon</option>
+              </select>
+            </div>
+
+            <div class="hotel-search-field" style="border: none; padding: 0;">
+              <button type="submit" class="btn btn-primary" style="height: 100%; width: 100%; border-radius: var(--radius-lg);">
+                <span>Qidirish</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         HOTELS LISTING & FILTERS
+         ========================= -->
+    <section class="hotels-listing-section">
+      <div class="container hotels-layout">
+        <!-- Sidebar Filters -->
+        <aside class="hotels-filter-sidebar">
+          <div class="sidebar-box">
+            <div class="sidebar-box-header">
+              <h3>Filtrlar</h3>
+              <button type="button" class="reset-link-btn" id="hotel-reset-filters">Tozalash</button>
+            </div>
+
+            <!-- Destination selector -->
+            <div class="filter-group">
+              <label class="filter-group-title" for="filter-hotel-city">Shahar bo'yicha</label>
+              <select id="filter-hotel-city" class="form-control">
+                <option value="all">Barcha Shaharlar</option>
+                <option value="Paris">Paris, France</option>
+                <option value="Dubai">Dubai, UAE</option>
+                <option value="Istanbul">Istanbul, Turkey</option>
+                <option value="Tokyo">Tokyo, Japan</option>
+                <option value="Bali">Bali, Indonesia</option>
+                <option value="Rome">Rome, Italy</option>
+                <option value="London">London, UK</option>
+                <option value="Maldives">Maldives</option>
+              </select>
+            </div>
+
+            <!-- Price Range -->
+            <div class="filter-group">
+              <label class="filter-group-title" for="filter-hotel-price">1 Kecha Narxi</label>
+              <select id="filter-hotel-price" class="form-control">
+                <option value="all">Barcha Narxlar</option>
+                <option value="under-250">$250 gacha</option>
+                <option value="250-400">$250 - $400</option>
+                <option value="above-400">$400 dan yuqori</option>
+              </select>
+            </div>
+
+            <!-- Star Rating -->
+            <div class="filter-group">
+              <label class="filter-group-title">Yulduzlar Soni</label>
+              <div class="checkbox-list">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="hotel-stars" value="5" checked>
+                  <span>5 Yulduzli (Hashamatli)</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="hotel-stars" value="4">
+                  <span>4 Yulduzli (Qulay)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Popular Amenities -->
+            <div class="filter-group">
+              <label class="filter-group-title">Qulayliklar (Amenities)</label>
+              <div class="checkbox-list">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="amenity" value="basseyn">
+                  <span>Basseyn (Pool)</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="amenity" value="spa">
+                  <span>SPA &amp; Wellness</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="amenity" value="wifi">
+                  <span>Bepul Wi-Fi</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="amenity" value="nonushta">
+                  <span>Lazzatli Nonushta</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="amenity" value="plyaj">
+                  <span>Sohil Bo'yi (Beach)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Hotels Cards Column -->
+        <div class="hotels-cards-col">
+          <div class="hotels-status-bar">
+            <span class="hotels-counter" id="hotels-count">Yuklanmoqda...</span>
+            <div class="sort-select-wrap">
+              <label for="hotel-sort" class="sort-label">Saralash:</label>
+              <select id="hotel-sort" class="sort-select">
+                <option value="rating">Reyting bo'yicha (Yuqori)</option>
+                <option value="price-asc">Narx: Arzondan qimmatga</option>
+                <option value="price-desc">Narx: Qimmatdan arzonga</option>
+                <option value="reviews">Ko'p sharhlangan</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Hotels Grid -->
+          <div class="hotels-grid" id="hotels-container">
+            <!-- Dinamik ravishda render qilinadi -->
+          </div>
+
+          <!-- Empty state -->
+          <div class="empty-state" id="hotels-empty-state" style="display: none;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 15h0M2 9h20M2 15h20"/></svg>
+            <h3>Hech qanday mehmonxona topilmadi</h3>
+            <p>Iltimos, filtrlarni o'zgartiring yoki boshqa shahar tanlang.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       HOTEL BOOKING MODAL
+       ========================= -->
+  <div class="modal-overlay" id="hotel-booking-modal">
+    <div class="modal-content" style="max-width: 620px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="hotel-modal-title">Mehmonxonani Bron Qilish</h3>
+        <button class="modal-close-btn" id="close-hotel-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-pkg-summary" id="modal-hotel-summary">
+          <!-- Summary info -->
+        </div>
+
+        <form id="hotel-booking-form">
+          <input type="hidden" id="modal-hotel-id">
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="hb-name">Ism va Familiya *</label>
+              <input type="text" id="hb-name" class="form-control" placeholder="Jamshid Karimov" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="hb-phone">Telefon Raqami *</label>
+              <input type="tel" id="hb-phone" class="form-control" placeholder="+998 90 123 45 67" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="hb-room-type">Xona Turi</label>
+            <select id="hb-room-type" class="form-control">
+              <option value="deluxe" data-mult="1.0">Standard Deluxe Room (Boshlang'ich narx)</option>
+              <option value="executive" data-mult="1.3">Executive Suite (+30%)</option>
+              <option value="presidential" data-mult="2.0">Presidential Panoramic Suite (+100%)</option>
+            </select>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="hb-checkin">Check-in *</label>
+              <input type="date" id="hb-checkin" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="hb-checkout">Check-out *</label>
+              <input type="date" id="hb-checkout" class="form-control" required>
+            </div>
+          </div>
+
+          <!-- Total night & price calc -->
+          <div class="modal-pricing-box">
+            <div class="price-row">
+              <span>Kecha narxi:</span>
+              <span id="hb-calc-night-price">$0</span>
+            </div>
+            <div class="price-row">
+              <span>Kechalar soni:</span>
+              <span id="hb-calc-nights-count">3 kecha</span>
+            </div>
+            <div class="price-row">
+              <span>Xona koeffitsiyenti:</span>
+              <span id="hb-calc-mult-val">1.0x</span>
+            </div>
+            <div class="price-divider"></div>
+            <div class="price-row total-row">
+              <span>Jami Taxminiy Summa:</span>
+              <span id="hb-calc-total">$0</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            Xonani Bron Qilish
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand-logo">
+            <span class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+            <span>Travel<span class="accent-text">UX</span></span>
+          </a>
+          <p>Dunyo bo'ylab saralangan mehmonxonalar. Har bir mehmon uchun yuqori darajadagi servis.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../02-destinations/destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="../04-tour-packages/tour-packages.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="hotels.html" class="footer-link">Hotels</a></li>
+            <li><a href="../06-trip-planner/trip-planner.html" class="footer-link">Trip Planner</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html" class="footer-link">About Us</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact</a></li>
+            <li><a href="../07-about/about.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html#faq" class="footer-link">Help Center</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Travel Website. All rights reserved.</p>
+        <p>Premium Hotels &amp; Resorts</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Yuqoriga qaytish">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="../../assets/js/travel-data.js"></script>
+  <script src="hotels.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* ====================================================================
+   HOTELS PAGE STYLES (hotels.css)
+   ==================================================================== */
+
+/* =========================
+   1. HERO & SEARCH
+   ========================= */
+.hotels-hero {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1800&q=80") no-repeat center center / cover;
+  padding: 80px 0 100px 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.hotels-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.9) 100%);
+}
+
+.hotels-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+}
+
+.hotels-search-card {
+  margin-top: 36px;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 14px 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.hotels-search-form {
+  display: grid;
+  grid-template-columns: 2fr 1.3fr 1.3fr 1.4fr 1.3fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.hotel-search-field {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.hotel-search-field:not(:last-child) {
+  border-right: 1px solid var(--border);
+}
+
+/* =========================
+   2. HOTELS LAYOUT
+   ========================= */
+.hotels-listing-section {
+  padding: 50px 0 90px 0;
+}
+
+.hotels-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+/* Sidebar Filters */
+.hotels-filter-sidebar {
+  position: sticky;
+  top: calc(var(--header-height) + 20px);
+}
+
+.sidebar-box {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-box-header h3 {
+  font-size: 1.15rem;
+}
+
+.filter-group {
+  margin-bottom: 22px;
+}
+
+.filter-group-title {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+/* Status Bar & Sort */
+.hotels-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  background: var(--white);
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.hotels-counter {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+/* Hotels Grid */
+.hotels-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.hotel-card {
+  position: relative;
+}
+
+.hotel-score-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .hotels-search-form {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .hotel-search-field:not(:last-child) {
+    border-right: none;
+  }
+  .hotels-search-form > div:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 992px) {
+  .hotels-layout {
+    grid-template-columns: 1fr;
+  }
+  .hotels-filter-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 680px) {
+  .hotels-grid {
+    grid-template-columns: 1fr;
+  }
+  .hotels-search-form {
+    grid-template-columns: 1fr;
+  }
+  .hotels-search-form > div:last-child {
+    grid-column: span 1;
+  }
+  .hotels-status-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .sort-select-wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

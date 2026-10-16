@@ -1,0 +1,246 @@
+{
+  "subject_name": "Huquq",
+  "subject_code": "law",
+  "questions": [
+    {
+      "id": "law_01",
+      "subject": "law",
+      "topic": "Konstitutsiya",
+      "difficulty": "easy",
+      "question": "O'zbekiston Respublikasining yangi tahrirdagi Konstitutsiyasining 1-moddasiga ko'ra O'zbekiston qanday davlat?",
+      "options": [
+        "Suveren, demokratik, huquqiy, ijtimoiy va dunyoviy davlat",
+        "Suveren va unitar davlat",
+        "Parlamentar respublika",
+        "Konstitutsiyaviy monarxiya"
+      ],
+      "correct_answer": 0,
+      "explanation": "2023-yil 30-apreldagi referendumda qabul qilingan Konstitutsiyaning 1-moddasi: 'O'zbekiston — boshqaruvning respublika shakliga ega bo'lgan suveren, demokratik, huquqiy, ijtimoiy va dunyoviy davlat'."
+    },
+    {
+      "id": "law_02",
+      "subject": "law",
+      "topic": "Konstitutsiya",
+      "difficulty": "easy",
+      "question": "Konstitutsiyaga ko'ra, O'zbekistonda davlat hokimiyatining birdan-bir manbai kim?",
+      "options": ["Xalq", "Oliy Majlis", "Prezident", "Vazirlar Mahkamasi"],
+      "correct_answer": 0,
+      "explanation": "Konstitutsiyaning 7-moddasiga muvofiq, xalq davlat hokimiyatining birdan bir manbaidir."
+    },
+    {
+      "id": "law_03",
+      "subject": "law",
+      "topic": "Inson huquqlari",
+      "difficulty": "medium",
+      "question": "'Miranda qoidasi' yangi tahrirdagi O'zbekiston Konstitutsiyasining qaysi moddasida mustahkamlandi?",
+      "options": ["27-moddasida", "15-moddasida", "40-moddasida", "55-moddasida"],
+      "correct_answer": 0,
+      "explanation": "27-moddada shaxsni ushlash chog'ida unga tushunarli tilda uning huquqlari va ushlab turilishi asoslari tushuntirilishi shartligi ('Miranda qoidasi') belgilangan."
+    },
+    {
+      "id": "law_04",
+      "subject": "law",
+      "topic": "Inson huquqlari",
+      "difficulty": "medium",
+      "question": "Aybsizlik prezumpsiyasi qoidasiga ko'ra, shaxs qachongacha aybsiz hisoblanadi?",
+      "options": [
+        "Sudning qonuniy kuchga kirgan hukmi bilan aybi isbotlanmaguncha",
+        "Tergov organi ayblov e'lon qilgunicha",
+        "Prokuror ayblov xulosasini tasdiqlaguncha",
+        "Gumon qilinuvchi o'z aybini tan olgunicha"
+      ],
+      "correct_answer": 0,
+      "explanation": "Konstitutsiyaning 28-moddasiga muvofiq, jinoyat sodir etganlikda ayblanayotgan shaxs uning aybi qonunda nazarda tutilgan tartibda oshkora sud muhokamasi yo'li bilan isbotlanmaguncha va sudning qonuniy kuchga kirgan hukmi bilan aniqlanmaguncha aybsiz hisoblanadi."
+    },
+    {
+      "id": "law_05",
+      "subject": "law",
+      "topic": "Fuqarolik huquqi asoslari",
+      "difficulty": "easy",
+      "question": "O'zbekiston Respublikasi Fuqarolik kodeksiga ko'ra to'liq fuqarolik muomala layoqati necha yoshdan boshlanadi?",
+      "options": ["18 yoshdan", "16 yoshdan", "21 yoshdan", "14 yoshdan"],
+      "correct_answer": 0,
+      "explanation": "FK 22-moddasiga binoan, fuqaroning o'z harakatlari bilan fuqarolik huquqlariga ega bo'lish va fuqarolik burchlarini vujudga keltirish hamda ularni bajarish layoqati voyaga yetishi bilan, ya'ni 18 yoshga to'lishi bilan to'la hajmda vujudga keladi."
+    },
+    {
+      "id": "law_06",
+      "subject": "law",
+      "topic": "Fuqarolik huquqi asoslari",
+      "difficulty": "medium",
+      "question": "16 yoshga to'lgan voyaga yetmagan shaxs mehnat shartnomasi bo'yicha ishlayotgan bo'lsa, to'la muomalaga layoqatli deb e'lon qilinishi nima deyiladi?",
+      "options": ["Emansipatsiya", "Reabilitatsiya", "Litsenziyalash", "Apostil"],
+      "correct_answer": 0,
+      "explanation": "Fuqarolik kodeksining 28-moddasiga ko'ra, 16 yoshga to'lgan voyaga yetmagan shaxs mehnat shartnomasi bo'yicha ishlayotgan bo'lsa yoki ota-onasi roziligi bilan tadbirkorlik faoliyati bilan shug'ullanayotgan bo'lsa, u to'la muomalaga layoqatli deb e'lon qilinishi (emansipatsiya) mumkin."
+    },
+    {
+      "id": "law_07",
+      "subject": "law",
+      "topic": "Mehnat huquqi asoslari",
+      "difficulty": "easy",
+      "question": "O'zbekiston Respublikasining Mehnat kodeksiga ko'ra haftalik ish vaqtining normal davomiyligi necha soatdan oshmasligi kerak?",
+      "options": ["40 soatdan", "36 soatdan", "48 soatdan", "35 soatdan"],
+      "correct_answer": 0,
+      "explanation": "Yangi Mehnat kodeksining 182-moddasiga muvofiq, xodim uchun ish vaqtining normal muddati haftasiga qirq (40) soatdan ortiq bo'lishi mumkin emas."
+    },
+    {
+      "id": "law_08",
+      "subject": "law",
+      "topic": "Mehnat huquqi asoslari",
+      "difficulty": "medium",
+      "question": "Ishga qabul qilishda sinov muddati ko'pi bilan necha oydan oshmasligi kerak?",
+      "options": ["3 oydan (tashkilot rahbarlari va o'rinbosarlari uchun 6 oy)", "1 oydan", "2 oydan", "Belgilanmagan"],
+      "correct_answer": 0,
+      "explanation": "Mehnat kodeksining 130-moddasiga binoan, dastlabki sinov muddati uch oydan, tashkilot rahbarlari, ularning o'rinbosarlari, bosh buxgalterlar uchun esa olti oydan oshmasligi kerak."
+    },
+    {
+      "id": "law_09",
+      "subject": "law",
+      "topic": "Mehnat huquqi asoslari",
+      "difficulty": "medium",
+      "question": "Xodimga beriladigan yillik asosiy mehnat ta'tilining eng kam davomiyligi qancha?",
+      "options": ["21 kalendar kuni", "15 ish kuni", "18 kalendar kuni", "30 kalendar kuni"],
+      "correct_answer": 0,
+      "explanation": "2023-yil 30-apreldan kuchga kirgan yangi Mehnat kodeksining 217-moddasiga ko'ra, har yilgi asosiy eng kam mehnat ta'tilining davomiyligi yigirma bir (21) kalendar kunini tashkil etadi."
+    },
+    {
+      "id": "law_10",
+      "subject": "law",
+      "topic": "Oila huquqi asoslari",
+      "difficulty": "easy",
+      "question": "O'zbekiston Respublikasi Oila kodeksiga ko'ra nikoh yoshi necha yosh etib belgilangan?",
+      "options": ["Erkaklar va ayollar uchun 18 yosh", "Erkaklar uchun 18, ayollar uchun 17 yosh", "Ikkala jins uchun 16 yosh", "21 yosh"],
+      "correct_answer": 0,
+      "explanation": "Oila kodeksining 15-moddasiga muvofiq, erkaklar va ayollar uchun nikoh yoshi bir xil — o'n sakkiz (18) yosh etib qat'iy belgilangan."
+    },
+    {
+      "id": "law_11",
+      "subject": "law",
+      "topic": "Oila huquqi asoslari",
+      "difficulty": "medium",
+      "question": "Er-xotinning nikoh davomida orttirgan umumiy mol-mulki ularning qanday mulki hisoblanadi?",
+      "options": ["Birgalikdagi umumiy mulki", "Ulushli mulki", "Faqat erning mulki", "Faqat ayolning mulki"],
+      "correct_answer": 0,
+      "explanation": "Oila kodeksining 23-moddasiga ko'ra, er va xotinning nikoh davomida orttirgan mol-mulklari, agar nikoh shartnomasida boshqacha qoida nazarda tutilmagan bo'lsa, ularning birgalikdagi umumiy mulki hisoblanadi."
+    },
+    {
+      "id": "law_12",
+      "subject": "law",
+      "topic": "Davlat va huquq nazariyasi",
+      "difficulty": "easy",
+      "question": "Huquqiy normalarning oliy yuridik kuchga ega bo'lgan va davlat parlamenti tomonidan qabul qilingan turi nima?",
+      "options": ["Qonun", "Farmon", "Qaror", "Buyruq"],
+      "correct_answer": 0,
+      "explanation": "Qonun oliy vakillik organi (parlament) tomonidan yoki umumxalq referendumi orqali qabul qilinadigan oliy yuridik kuchga ega me'yoriy-huquqiy hujjatdir."
+    },
+    {
+      "id": "law_13",
+      "subject": "law",
+      "topic": "Davlat va huquq nazariyasi",
+      "difficulty": "medium",
+      "question": "Huquqiy munosabatlarning tarkibiy elementlari qaysilar?",
+      "options": [
+        "Subyekt, obyekt va mazmun (huquq va majburiyatlar)",
+        "Gipoteza, dispozitsiya, sanksiya",
+        "Ega, kesim va to'ldiruvchi",
+        "Norma, kodeks, qonun"
+      ],
+      "correct_answer": 0,
+      "explanation": "Huquqiy munosabat tarkibi 3 ta asosiy elementdan iborat: Subyektlar (qatnashchilar), Obyekt (munosabat qaratilgan ne'mat) va Mazmun (subyektiv huquq va yuridik majburiyatlar)."
+    },
+    {
+      "id": "law_14",
+      "subject": "law",
+      "topic": "Davlat va huquq nazariyasi",
+      "difficulty": "hard",
+      "question": "Huquq normasining tuzilishi (strukturasi) qanday elementlardan tashkil topgan?",
+      "options": [
+        "Gipoteza, dispozitsiya, sanksiya",
+        "Preambula, modda, band",
+        "Muqaddima, asosiy qism, xulosa",
+        "Subyekt, obyekt, yuridik fakt"
+      ],
+      "correct_answer": 0,
+      "explanation": "Klassik huquq normasi uch qismdan iborat: Gipoteza (qo'llanish sharti), Dispozitsiya (xulq-atvor qoidasi) va Sanksiya (qoida buzilgandagi huquqiy oqibat)."
+    },
+    {
+      "id": "law_15",
+      "subject": "law",
+      "topic": "Konstitutsiya",
+      "difficulty": "medium",
+      "question": "O'zbekiston Respublikasi Oliy Majlisi qanday ikki palatadan iborat?",
+      "options": [
+        "Qonunchilik palatasi (quyi palata) va Senat (yuqori palata)",
+        "Davlat Dumasi va Federatsiya kengashi",
+        "Vakillar palatasi va Milliy kengash",
+        "Prezident kengashi va Vazirlar mahkamasi"
+      ],
+      "correct_answer": 0,
+      "explanation": "Konstitutsiyaning 91-moddasiga ko'ra O'zbekiston parlamenti Oliy Majlis Qonunchilik palatasi va Senatdan iborat."
+    },
+    {
+      "id": "law_16",
+      "subject": "law",
+      "topic": "Konstitutsiya",
+      "difficulty": "medium",
+      "question": "Yangi tahrirdagi Konstitutsiyaga ko'ra, O'zbekiston Respublikasi Prezidentining vakolat muddati necha yil?",
+      "options": ["7 yil", "5 yil", "4 yil", "6 yil"],
+      "correct_answer": 0,
+      "explanation": "2023-yilgi yangi tahrirdagi Konstitutsiyaning 106-moddasiga binoan, O'zbekiston Respublikasi Prezidenti yetti (7) yil muddatga saylanadi."
+    },
+    {
+      "id": "law_17",
+      "subject": "law",
+      "topic": "Huquqiy vaziyatlar",
+      "difficulty": "medium",
+      "question": "Vaziyat: Ish beruvchi 17 yoshli xodimga sinov muddati belgiladi. Bu qonuniymi?",
+      "options": [
+        "Yo'q, 18 yoshga to'lmagan shaxslar ishga qabul qilinganda sinov muddati belgilanmaydi",
+        "Ha, barcha xodimlarga sinov qo'llash ish beruvchining mutloq huquqi",
+        "Faqat 1 oylik sinov belgilanishi mumkin",
+        "Faqat kasbiy ma'lumotga ega bo'lsa mumkin"
+      ],
+      "correct_answer": 0,
+      "explanation": "Mehnat kodeksining 129-moddasiga binoan o'n sakkiz yoshga to'lmagan shaxslar ishga qabul qilinganda dastlabki sinov muddati belgilanmaydi."
+    },
+    {
+      "id": "law_18",
+      "subject": "law",
+      "topic": "Huquqiy vaziyatlar",
+      "difficulty": "hard",
+      "question": "Vaziyat: Fuqaro do'kondan sifatsiz maishiy texnika sotib oldi. U qancha muddat ichida da'vo bildirishi yoki tovarni almashtirishi mumkin?",
+      "options": [
+        "Kafolat muddati davomida, agar belgilanmagan bo'lsa 2 yil mobaynida",
+        "Faqat 3 kun ichida",
+        "Faqat 14 kun ichida",
+        "Cheksiz muddat davomida"
+      ],
+      "correct_answer": 0,
+      "explanation": "'Iste'molchilarning huquqlarini himoya qilish to'g'risida'gi Qonun va Fuqarolik kodeksiga binoan tovarning nuqsonlari yuzasidan talablar kafolat muddati, u belgilanmagan hollarda 2 yil mobaynida qo'yilishi mumkin."
+    },
+    {
+      "id": "law_19",
+      "subject": "law",
+      "topic": "Konstitutsiya",
+      "difficulty": "easy",
+      "question": "Har kim munosib mehnat qilish, erkin kasb tanlash huquqiga ega. Majburiy mehnat bo'yicha qanday qoida o'rnatilgan?",
+      "options": [
+        "Majburiy mehnat qat'iyan taqiqlanadi",
+        "Hosil yig'im-terimida majburiy mehnatga ruxsat beriladi",
+        "Shanbaliklar majburiy bo'lishi mumkin",
+        "Faqat voyaga yetmaganlar uchun taqiqlanadi"
+      ],
+      "correct_answer": 0,
+      "explanation": "Konstitutsiyaning 44-moddasiga ko'ra har qanday shakldagi majburiy mehnat, shu jumladan bolalar mehnati taqiqlanadi."
+    },
+    {
+      "id": "law_20",
+      "subject": "law",
+      "topic": "Inson huquqlari",
+      "difficulty": "easy",
+      "question": "Inson huquqlari umumjahon deklaratsiyasi qachon BMT Bosh Assambleyasi tomonidan qabul qilingan?",
+      "options": ["1948-yil 10-dekabrda", "1945-yil 9-mayda", "1991-yil 1-sentyabrda", "1992-yil 8-dekabrda"],
+      "correct_answer": 0,
+      "explanation": "Inson huquqlari umumjahon deklaratsiyasi 1948-yil 10-dekabr kuni BMT Bosh Assambleyasi rezolyutsiyasi bilan qabul qilingan va 10-dekabr Xalqaro inson huquqlari kuni deb e'lon qilingan."
+    }
+  ]
+}

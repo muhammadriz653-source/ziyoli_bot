@@ -1,0 +1,238 @@
+{
+  "subject_name": "Ingliz tili",
+  "subject_code": "english",
+  "words_of_the_day": [
+    {
+      "word": "Perseverance",
+      "pronunciation": "[ˌpɜːsɪˈvɪərəns]",
+      "translation": "Matonat, sabot, qat'iyat",
+      "example": "Through hard work and perseverance, he achieved all his life goals."
+    },
+    {
+      "word": "Diligent",
+      "pronunciation": "[ˈdɪlɪdʒənt]",
+      "translation": "Tirishqoq, g'ayratli",
+      "example": "Diligent students always achieve high results in their exams."
+    },
+    {
+      "word": "Eloquent",
+      "pronunciation": "[ˈeləkwənt]",
+      "translation": "Fasohotli, notiq, chiroyli so'zlovchi",
+      "example": "She gave an eloquent speech that moved the entire audience."
+    },
+    {
+      "word": "Resilience",
+      "pronunciation": "[rɪˈzɪliəns]",
+      "translation": "Moslashuvchanlik, qiyinchiliklarga bardoshlilik",
+      "example": "The community showed great resilience in rebuilding after the storm."
+    },
+    {
+      "word": "Meticulous",
+      "pronunciation": "[məˈtɪkjələs]",
+      "translation": "Har bir mayda-chuydaga e'tibor beruvchi, sinchkov",
+      "example": "He was meticulous about keeping his records up to date."
+    }
+  ],
+  "questions": [
+    {
+      "id": "en_01",
+      "subject": "english",
+      "topic": "Articles",
+      "difficulty": "easy",
+      "question": "She wants to buy ___ new car because her old one broke down.",
+      "options": ["a", "an", "the", "-"],
+      "correct_answer": 0,
+      "explanation": "'New' so'zi undosh tovush bilan boshlangani uchun va noaniq yakka ot ifodalanganligi sababli 'a' artikli qo'yiladi."
+    },
+    {
+      "id": "en_02",
+      "subject": "english",
+      "topic": "Articles",
+      "difficulty": "medium",
+      "question": "___ Pacific Ocean is the largest ocean on Earth.",
+      "options": ["A", "An", "The", "-"],
+      "correct_answer": 2,
+      "explanation": "Okeanlar, dengizlar va daryolar nomlari oldidan har doim 'The' aniq artikli ishlatiladi."
+    },
+    {
+      "id": "en_03",
+      "subject": "english",
+      "topic": "Prepositions",
+      "difficulty": "easy",
+      "question": "Our flight departs ___ Monday morning at 8:30 AM.",
+      "options": ["at", "on", "in", "by"],
+      "correct_answer": 1,
+      "explanation": "Hafta kunlari va aniq kunlarning vaqt oralig'i (Monday morning) oldidan 'on' predlogi ishlatiladi."
+    },
+    {
+      "id": "en_04",
+      "subject": "english",
+      "topic": "Prepositions",
+      "difficulty": "medium",
+      "question": "She is capable ___ handling complex software architectures.",
+      "options": ["for", "at", "of", "with"],
+      "correct_answer": 2,
+      "explanation": "'Capable' sifati o'zidan keyin 'of' predlogi va Gerund (-ing) shaklini talab qiladi (capable of doing sth)."
+    },
+    {
+      "id": "en_05",
+      "subject": "english",
+      "topic": "Tenses",
+      "difficulty": "easy",
+      "question": "Water ___ at 100 degrees Celsius under standard atmospheric pressure.",
+      "options": ["boil", "is boiling", "boils", "has boiled"],
+      "correct_answer": 2,
+      "explanation": "Tabiat qonunlari va ilmiy faktlar har doim Present Simple zamonida ifodalanadi (he/she/it uchun fe'lga -s qo'shiladi)."
+    },
+    {
+      "id": "en_06",
+      "subject": "english",
+      "topic": "Tenses",
+      "difficulty": "medium",
+      "question": "By the time we arrived at the cinema, the movie ___ already.",
+      "options": ["started", "had started", "has started", "starts"],
+      "correct_answer": 1,
+      "explanation": "O'tgan zamondagi boshqa bir harakatdan oldin sodir bo'lib tugallangan harakat uchun Past Perfect (had + V3) ishlatiladi."
+    },
+    {
+      "id": "en_07",
+      "subject": "english",
+      "topic": "Tenses",
+      "difficulty": "hard",
+      "question": "By next December, we ___ on this research project for three years.",
+      "options": ["will work", "will be working", "will have been working", "have worked"],
+      "correct_answer": 2,
+      "explanation": "Kelajakdagi ma'lum vaqtgacha davom etib kelgan va davom etayotgan harakat uchun Future Perfect Continuous ishlatiladi."
+    },
+    {
+      "id": "en_08",
+      "subject": "english",
+      "topic": "Modal Verbs",
+      "difficulty": "easy",
+      "question": "You ___ wear a helmet while riding a motorcycle; it is mandatory by law.",
+      "options": ["might", "must", "could", "may"],
+      "correct_answer": 1,
+      "explanation": "Qonuniy qat'iy majburiyat va zaruratni ifodalash uchun 'must' modallik fe'li ishlatiladi."
+    },
+    {
+      "id": "en_09",
+      "subject": "english",
+      "topic": "Modal Verbs",
+      "difficulty": "medium",
+      "question": "He has not slept for 24 hours. He ___ be completely exhausted.",
+      "options": ["can't", "must", "should", "needn't"],
+      "correct_answer": 1,
+      "explanation": "Kuchli mantiqiy xulosa va ishonchni ifodalashda 'must be' (shubhasiz shunday bo'lsa kerak) ishlatiladi."
+    },
+    {
+      "id": "en_10",
+      "subject": "english",
+      "topic": "Modal Verbs",
+      "difficulty": "hard",
+      "question": "You ___ him the secret. Now everyone in the office knows about it!",
+      "options": ["shouldn't have told", "mustn't tell", "couldn't tell", "needn't tell"],
+      "correct_answer": 0,
+      "explanation": "O'tgan zamonda qilingan noto'g'ri ishdan afsuslanish yoki tanqid qilish uchun 'shouldn't have + V3' ishlatiladi."
+    },
+    {
+      "id": "en_11",
+      "subject": "english",
+      "topic": "Conditionals",
+      "difficulty": "medium",
+      "question": "If I ___ more free time, I would learn how to play the piano.",
+      "options": ["have", "had", "would have", "had had"],
+      "correct_answer": 1,
+      "explanation": "Second Conditional (hozirgi zamondagi noreal orzu-istaklar): If + Past Simple, would + V1 tuzilmasi talab qilinadi."
+    },
+    {
+      "id": "en_12",
+      "subject": "english",
+      "topic": "Conditionals",
+      "difficulty": "hard",
+      "question": "If you had informed me earlier, I ___ the conference schedule.",
+      "options": ["would rearrange", "will rearrange", "would have rearranged", "rearranged"],
+      "correct_answer": 2,
+      "explanation": "Third Conditional (o'tgan zamondagi noreal vaziyat): If + Past Perfect, would have + V3."
+    },
+    {
+      "id": "en_13",
+      "subject": "english",
+      "topic": "Vocabulary",
+      "difficulty": "easy",
+      "question": "Choose the synonym of 'Accurate':",
+      "options": ["Careless", "Precise", "Vague", "Doubtful"],
+      "correct_answer": 1,
+      "explanation": "'Accurate' so'zi 'aniq', 'to'g'ri' degan ma'noni bildiradi. Uning eng yaqin sinonimi 'Precise' dir."
+    },
+    {
+      "id": "en_14",
+      "subject": "english",
+      "topic": "Vocabulary",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'Abundant':",
+      "options": ["Plentiful", "Scarce", "Rich", "Sufficient"],
+      "correct_answer": 1,
+      "explanation": "'Abundant' (mo'l-ko'l, yetarli) so'zining antonimi 'Scarce' (taqchil, kamyob) hisoblanadi."
+    },
+    {
+      "id": "en_15",
+      "subject": "english",
+      "topic": "Vocabulary",
+      "difficulty": "hard",
+      "question": "What does the idiom 'Bite the bullet' mean?",
+      "options": ["To eat something crunchy", "To face a difficult situation with courage", "To shoot quickly", "To make a big mistake"],
+      "correct_answer": 1,
+      "explanation": "'Bite the bullet' iborasi muqarrar bo'lgan qiyin yoki noxush vaziyatni mardlik bilan qabul qilishni anglatadi."
+    },
+    {
+      "id": "en_16",
+      "subject": "english",
+      "topic": "Passive Voice",
+      "difficulty": "medium",
+      "question": "The new bridge ___ next month by the president.",
+      "options": ["is opened", "will be opened", "has opened", "was opened"],
+      "correct_answer": 1,
+      "explanation": "Kelasi zamon ('next month') majhul nisbat shakli 'will be + V3' (will be opened) bo'ladi."
+    },
+    {
+      "id": "en_17",
+      "subject": "english",
+      "topic": "Reported Speech",
+      "difficulty": "medium",
+      "question": "'I am learning Python,' said Aziz. -> Aziz said that he ___ Python.",
+      "options": ["is learning", "was learning", "has learned", "learns"],
+      "correct_answer": 1,
+      "explanation": "O'zlashtirma gapda (Reported speech) bosh gap o'tgan zamonda bo'lsa, Present Continuous -> Past Continuous ga o'zgaradi."
+    },
+    {
+      "id": "en_18",
+      "subject": "english",
+      "topic": "Reading",
+      "difficulty": "medium",
+      "question": "Read: 'Renewable energy sources such as solar and wind do not emit greenhouse gases.' What is the main point?",
+      "options": ["Solar panels are expensive", "Wind turbines are noisy", "Renewable energy is environmentally friendly", "Fossil fuels are better"],
+      "correct_answer": 2,
+      "explanation": "Matn qayta tiklanuvchi energiya manbalari issiqxona gazlarini chiqarmasligi, ya'ni ekologik toza ekanligini ta'kidlaydi."
+    },
+    {
+      "id": "en_19",
+      "subject": "english",
+      "topic": "Grammar",
+      "difficulty": "hard",
+      "question": "Hardly ___ the station when the train pulled away.",
+      "options": ["he had reached", "had he reached", "did he reach", "he reached"],
+      "correct_answer": 1,
+      "explanation": "'Hardly', 'Scarcely', 'No sooner' kabi inkor yuklamalari gap boshida kelganda inversiya (had + ega + V3) yuz beradi."
+    },
+    {
+      "id": "en_20",
+      "subject": "english",
+      "topic": "Grammar",
+      "difficulty": "intermediate",
+      "question": "I look forward to ___ from you soon.",
+      "options": ["hear", "hearing", "heard", "be heard"],
+      "correct_answer": 1,
+      "explanation": "'Look forward to' birikmasidagi 'to' predlog hisoblanadi va undan keyin Gerund (V-ing) qo'llaniladi."
+    }
+  ]
+}

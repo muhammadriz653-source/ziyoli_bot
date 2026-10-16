@@ -1,0 +1,211 @@
+{
+  "subject_name": "Mantiqiy fikrlash",
+  "subject_code": "logic",
+  "questions": [
+    {
+      "id": "log_01",
+      "subject": "logic",
+      "topic": "Sonlar ketma-ketligi",
+      "difficulty": "easy",
+      "question": "Qonuniyatni aniqlang va so'roq belgisi o'rnidagi sonni toping:\n3, 6, 12, 24, 48, ?",
+      "options": ["96", "84", "72", "108"],
+      "correct_answer": 0,
+      "explanation": "Har bir keyingi son oldingi sonni 2 ga ko'paytirish orqali hosil bo'lmoqda: 48 × 2 = 96."
+    },
+    {
+      "id": "log_02",
+      "subject": "logic",
+      "topic": "Sonlar ketma-ketligi",
+      "difficulty": "medium",
+      "question": "Ketma-ketlikdagi keyingi sonni toping:\n1, 1, 2, 3, 5, 8, 13, 21, ?",
+      "options": ["34", "31", "29", "42"],
+      "correct_answer": 0,
+      "explanation": "Bu mashhur Fibonachchi ketma-ketligidir. Har bir son o'zidan oldingi ikkita sonning yig'indisiga teng: 13 + 21 = 34."
+    },
+    {
+      "id": "log_03",
+      "subject": "logic",
+      "topic": "Ortiqcha elementni topish",
+      "difficulty": "easy",
+      "question": "Quyidagi so'zlar orasidan mantiqan ortiqchasini toping:\nToshkent, Samarqand, Buxoro, O'zbekiston, Xiva",
+      "options": ["O'zbekiston", "Toshkent", "Buxoro", "Xiva"],
+      "correct_answer": 0,
+      "explanation": "Toshkent, Samarqand, Buxoro va Xiva — shaharlar, O'zbekiston esa davlat nomidir."
+    },
+    {
+      "id": "log_04",
+      "subject": "logic",
+      "topic": "Ortiqcha elementni topish",
+      "difficulty": "medium",
+      "question": "Ortiqcha sonni toping: 16, 25, 36, 47, 64, 81",
+      "options": ["47", "16", "64", "81"],
+      "correct_answer": 0,
+      "explanation": "Qolgan barcha sonlar to'la kvadratlardir: 4²=16, 5²=25, 6²=36, 8²=64, 9²=81. Faqat 47 soni to'la kvadrat emas."
+    },
+    {
+      "id": "log_05",
+      "subject": "logic",
+      "topic": "Mantiqiy jumboqlar",
+      "difficulty": "easy",
+      "question": "Bir kishi yomg'ir ostida soyabonsiz va bosh kiyimsiz qoldi, ammo uning birorta ham sochi ho'l bo'lmadi. Nega?",
+      "options": ["U mutlaqo kal edi", "U yugurib ketdi", "Yomg'ir juda sekin yog'ardi", "Daraxt ostida turgan edi"],
+      "correct_answer": 0,
+      "explanation": "Chunki u kishining umuman sochi yo'q edi (u kal edi)."
+    },
+    {
+      "id": "log_06",
+      "subject": "logic",
+      "topic": "Mantiqiy jumboqlar",
+      "difficulty": "medium",
+      "question": "Stol ustida 10 ta yoniq sham bor edi. Shamol ulardan 3 tasini o'chirib qo'ydi. Ertalab stolda nechta sham qoladi?",
+      "options": ["3 ta sham", "7 ta sham", "10 ta sham", "0 ta"],
+      "correct_answer": 0,
+      "explanation": "O'chib qolgan 3 ta sham erib ketmay saqlanib qoladi. Qolgan 7 ta sham esa oxirigacha yonib, tamom bo'ladi."
+    },
+    {
+      "id": "log_07",
+      "subject": "logic",
+      "topic": "Matematik topishmoqlar",
+      "difficulty": "easy",
+      "question": "Besh kishi o'zaro bir-biri bilan bir martadan qo'l berib ko'rishdi. Jami nechta qo'l berib ko'rishish bo'lgan?",
+      "options": ["10 ta", "20 ta", "25 ta", "5 ta"],
+      "correct_answer": 0,
+      "explanation": "Kombinatorika formulasi bo'yicha: C(5, 2) = (5 × 4) / 2 = 10 ta qo'l berib ko'rishish."
+    },
+    {
+      "id": "log_08",
+      "subject": "logic",
+      "topic": "Matematik topishmoqlar",
+      "difficulty": "medium",
+      "question": "Bir dona tuxum 4 daqiqada qaynaydi. 5 ta tuxum birga bir qozonda necha daqiqada qaynaydi?",
+      "options": ["4 daqiqada", "20 daqiqada", "10 daqiqada", "8 daqiqada"],
+      "correct_answer": 0,
+      "explanation": "Barcha tuxumlar bir vaqtda qozonga solingani uchun baribir 4 daqiqada pishadi."
+    },
+    {
+      "id": "log_09",
+      "subject": "logic",
+      "topic": "Vaziyatli masalalar",
+      "difficulty": "medium",
+      "question": "Siz poygada 2-o'rindagi yuguruvchini quvib o'tdingiz. Hozir siz nechanchi o'rindasiz?",
+      "options": ["2-o'rinda", "1-o'rinda", "3-o'rinda", "G'olibsiz"],
+      "correct_answer": 0,
+      "explanation": "Siz 2-o'rindagi ishtirokchini ortda qoldirganingiz uchun uning o'rnini egallaysiz, ya'ni 2-o'ringa o'tasiz (1-o'rinda boshqa odam qoladi)."
+    },
+    {
+      "id": "log_10",
+      "subject": "logic",
+      "topic": "Vaziyatli masalalar",
+      "difficulty": "hard",
+      "question": "Bemorga shifokor 3 ta tabletka yozib berdi va har yarim soatda (30 daqiqa) bittadan ichishni buyurdi. Barcha dorilar necha daqiqada ichib bo'linadi?",
+      "options": ["60 daqiqada (1 soat)", "90 daqiqada", "30 daqiqada", "120 daqiqada"],
+      "correct_answer": 0,
+      "explanation": "1-tabletka darhol (0-daqiqa), 2-tabletka 30-daqiqada, 3-tabletka 60-daqiqada ichiladi. Jami 60 daqiqa vaqt ketadi."
+    },
+    {
+      "id": "log_11",
+      "subject": "logic",
+      "topic": "So'zlar bilan bog'liq mantiq",
+      "difficulty": "easy",
+      "question": "Daryo so'ziga 'oqim' qanday bog'langan bo'lsa, 'avtomobil' so'ziga nima shunday bog'lanadi?",
+      "options": ["Harakat", "G'ildirak", "Benzin", "Yo'l"],
+      "correct_answer": 0,
+      "explanation": "Oqim — daryoning asosiy dinamik xususiyati (harakati) bo'lganidek, harakat avtomobilning asosiy dinamik xususiyatidir."
+    },
+    {
+      "id": "log_12",
+      "subject": "logic",
+      "topic": "Mantiqiy jumboqlar",
+      "difficulty": "easy",
+      "question": "Hammaning bor, uni hech kim yo'qota olmaydi. U har doim siz bilan yuradi, lekin uni ushlab bo'lmaydi. Bu nima?",
+      "options": ["Soya", "Oyoq kiyim", "Pul", "Kitob"],
+      "correct_answer": 0,
+      "explanation": "Soya yorug'lik tushganda har doim jismga ergashadi va uni jismonan ushlab bo'lmaydi."
+    },
+    {
+      "id": "log_13",
+      "subject": "logic",
+      "topic": "Sonlar ketma-ketligi",
+      "difficulty": "medium",
+      "question": "Qonuniyatni toping: 2, 5, 10, 17, 26, ?",
+      "options": ["37", "35", "36", "40"],
+      "correct_answer": 0,
+      "explanation": "Qonuniyat: n² + 1.\n1² + 1 = 2\n2² + 1 = 5\n3² + 1 = 10\n4² + 1 = 17\n5² + 1 = 26\n6² + 1 = 37."
+    },
+    {
+      "id": "log_14",
+      "subject": "logic",
+      "topic": "Diqqat va xotira",
+      "difficulty": "medium",
+      "question": "Bir sutkada soatning soat va daqiqa millari necha marta to'liq ustma-ust tushadi?",
+      "options": ["22 marta", "24 marta", "12 marta", "20 marta"],
+      "correct_answer": 0,
+      "explanation": "Har 12 soatda ular 11 marta ustma-ust tushadi (chunki daqiqa mili harakatlanganda soat mili ham oldinga siljiydi). Bir sutkada (24 soat) 11 × 2 = 22 marta ustma-ust tushadi."
+    },
+    {
+      "id": "log_15",
+      "subject": "logic",
+      "topic": "Vaziyatli masalalar",
+      "difficulty": "hard",
+      "question": "Qorong'i xonada gugurt qutisi, kerosin chiroq, sham va o'choq bor. Xonani isitish va yoritish uchun siz birinchi navbatda nimani yoqasiz?",
+      "options": ["Gugurtni", "Shamni", "Chiroqni", "O'choqni"],
+      "correct_answer": 0,
+      "explanation": "Har qanday narsani yoqish uchun avvalo gugurt cho'pini yoqish kerak."
+    },
+    {
+      "id": "log_16",
+      "subject": "logic",
+      "topic": "Matematik topishmoqlar",
+      "difficulty": "easy",
+      "question": "Ikkita ota va ikkita o'g'il ovga borishdi va jami 3 ta o'rdak otishdi. Qaytishgach, ularning har biriga bittadan o'rdak tegdi. Bu qanday sodir bo'ldi?",
+      "options": [
+        "Ular 3 kishi edi: bobo, ota va o'g'il",
+        "O'rdaklarni bo'lishda xato qilishdi",
+        "Bittasini do'kondan sotib olishdi",
+        "Ovchi to'rt kishi edi"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ular 3 avlod vakillari edi: Bobo (ota), Ota (ham ota, ham o'g'il) va Nabira (o'g'il). Jami 3 kishi bo'lgan."
+    },
+    {
+      "id": "log_17",
+      "subject": "logic",
+      "topic": "Shakllar va qonuniyatlar",
+      "difficulty": "medium",
+      "question": "Kub shaklidagi qutining nechta qirrasi (qovurg'asi) bor?",
+      "options": ["12 ta", "8 ta", "6 ta", "16 ta"],
+      "correct_answer": 0,
+      "explanation": "Kubning 6 ta yog'i, 8 ta uchi va 12 ta qirrasi mavjud."
+    },
+    {
+      "id": "log_18",
+      "subject": "logic",
+      "topic": "So'zlar bilan bog'liq mantiq",
+      "difficulty": "easy",
+      "question": "Agar 'KITOBLAR' so'zini teskarisiga o'qisak, qaysi harf to'rtinchi bo'ladi?",
+      "options": ["B", "O", "T", "L"],
+      "correct_answer": 0,
+      "explanation": "'KITOBLAR' so'zi teskarisiga: R, A, L, B, O, T, I, K. 4-o'rindagi harf — B."
+    },
+    {
+      "id": "log_19",
+      "subject": "logic",
+      "topic": "Mantiqiy jumboqlar",
+      "difficulty": "hard",
+      "question": "U qanchalik ko'p bo'lsa, siz shunchalik kam ko'rasiz. Bu nima?",
+      "options": ["Zulmat (qorong'ulik) yoki tuman", "Yorug'lik", "Ko'zoynak", "Oyna"],
+      "correct_answer": 0,
+      "explanation": "Qorong'ulik yoki qalin tuman qancha ko'paysa, ko'rish masofasi va ko'rish aniqligi shuncha kamayadi."
+    },
+    {
+      "id": "log_20",
+      "subject": "logic",
+      "topic": "Sonlar ketma-ketligi",
+      "difficulty": "medium",
+      "question": "Ketma-ketlikdagi bo'sh o'rinni to'ldiring: 100, 95, 85, 70, 50, ?",
+      "options": ["25", "30", "35", "20"],
+      "correct_answer": 0,
+      "explanation": "Ayirish qadami 5 ga ortib bormoqda: -5 (95), -10 (85), -15 (70), -20 (50), -25 (25)."
+    }
+  ]
+}

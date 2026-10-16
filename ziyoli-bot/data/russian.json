@@ -1,0 +1,216 @@
+{
+  "subject_name": "Rus tili",
+  "subject_code": "russian",
+  "questions": [
+    {
+      "id": "ru_01",
+      "subject": "russian",
+      "topic": "Падежи (Kelishiklar)",
+      "difficulty": "easy",
+      "question": "Вставьте правильное окончание: Я читаю интересн___ книгу.",
+      "options": ["-ый", "-ую", "-ой", "-ая"],
+      "correct_answer": 1,
+      "explanation": "'Книга' so'zi ayol jinsida (женский род) bo'lib, tushum kelishigida (Винительный падеж) sifat '-ую' qo'shimchasini oladi (интересную книгу)."
+    },
+    {
+      "id": "ru_02",
+      "subject": "russian",
+      "topic": "Падежи (Kelishiklar)",
+      "difficulty": "easy",
+      "question": "Он подарил цветы своей любимой ___ .",
+      "options": ["мама", "маме", "маму", "мамой"],
+      "correct_answer": 1,
+      "explanation": "'Кому?' (kimgadir berish) so'rog'i Dative (Дательный падеж) kelishigiga tegishli. Ayol jinsidagi so'zlar '-е' qo'shimchasini oladi (маме)."
+    },
+    {
+      "id": "ru_03",
+      "subject": "russian",
+      "topic": "Падежи (Kelishiklar)",
+      "difficulty": "medium",
+      "question": "У нас нет нов___ учебник___ .",
+      "options": ["-ого / -а", "-ым / -ом", "-ому / -у", "-ом / -е"],
+      "correct_answer": 0,
+      "explanation": "'Нет кого/чего?' — Родительный падеж (Qaratqich kelishigi). Muz jinsida (мужской род) sifat '-ого', ot '-а' qo'shimchasini oladi (нового учебника)."
+    },
+    {
+      "id": "ru_04",
+      "subject": "russian",
+      "topic": "Падежи (Kelishiklar)",
+      "difficulty": "medium",
+      "question": "Мы долго гуляли по красив___ парк___ .",
+      "options": ["-ому / -у", "-ым / -ом", "-ого / -а", "-ом / -е"],
+      "correct_answer": 0,
+      "explanation": "'Гулять по чему?' — 'по' predlogi bu yerda Дательный падеж bilan ishlatiladi: по красивому парку."
+    },
+    {
+      "id": "ru_05",
+      "subject": "russian",
+      "topic": "Глаголы движения (Harakat fe'llari)",
+      "difficulty": "easy",
+      "question": "Каждое утро я ___ в школу пешком.",
+      "options": ["иду", "хожу", "пойду", "поеду"],
+      "correct_answer": 1,
+      "explanation": "Muntazam, har kuni takrorlanuvchi harakat uchun ko'p yo'nalishli (бесприставочный) 'ходить' (хожу) fe'li ishlatiladi."
+    },
+    {
+      "id": "ru_06",
+      "subject": "russian",
+      "topic": "Глаголы движения (Harakat fe'llari)",
+      "difficulty": "medium",
+      "question": "Завтра в это время мы будем ___ в поезде в Самарканд.",
+      "options": ["ехать", "ездить", "поехать", "уехать"],
+      "correct_answer": 0,
+      "explanation": "Muayyan vaqtda davom etayotgan bir tomonlama harakat jarayoni uchun 'ехать' fe'lining noaniq shakli qo'llaniladi."
+    },
+    {
+      "id": "ru_07",
+      "subject": "russian",
+      "topic": "Виды глагола (Fe'l turlari)",
+      "difficulty": "medium",
+      "question": "Вчера вечером я долго ___ домашнее задание, но так и не ___ его.",
+      "options": ["делал / сделал", "сделал / делал", "сделал / сделал", "делал / делал"],
+      "correct_answer": 0,
+      "explanation": "'Долго' so'zi harakatning uzoq davom etganini (НСВ: делал), ikkinchi qismi esa natijaga erishilmaganini (СВ: сделал) bildiradi."
+    },
+    {
+      "id": "ru_08",
+      "subject": "russian",
+      "topic": "Лексика и синонимы",
+      "difficulty": "easy",
+      "question": "Выберите синоним к слову 'Аккуратный':",
+      "options": ["Опрятный", "Грубый", "Ленивый", "Смелый"],
+      "correct_answer": 0,
+      "explanation": "'Аккуратный' (saranjom, ozoda) so'zining eng yaqin sinonimi 'Опрятный' hisoblanadi."
+    },
+    {
+      "id": "ru_09",
+      "subject": "russian",
+      "topic": "Лексика и антонимы",
+      "difficulty": "medium",
+      "question": "Выберите антоним к слову 'Временный':",
+      "options": ["Короткий", "Постоянный", "Случайный", "Весёлый"],
+      "correct_answer": 1,
+      "explanation": "'Временный' (vaqtinchalik) so'ziga qarama-qarshi ma'nodagi so'z 'Постоянный' (doimiy) dir."
+    },
+    {
+      "id": "ru_10",
+      "subject": "russian",
+      "topic": "Орфография (Imlo)",
+      "difficulty": "medium",
+      "question": "В каком слове пишется буква 'О'?",
+      "options": ["Ш...лк", "Ш...рох", "Ч...рный", "Ж...лтый"],
+      "correct_answer": 1,
+      "explanation": "Ildizda urg'u ostida tovush 'о' eshitilib, unga bir o'zakli 'е' harfli so'z bo'lmagan mustasno so'zlar: шорох, шов, капюшон kabi so'zlarda 'о' yoziladi."
+    },
+    {
+      "id": "ru_11",
+      "subject": "russian",
+      "topic": "Род имён существительных (Otlar jinsi)",
+      "difficulty": "medium",
+      "question": "К какому роду относится слово 'Кофе' в литературном языке?",
+      "options": ["Мужской род", "Средний род", "Женский род", "Общий род"],
+      "correct_answer": 0,
+      "explanation": "Rus adabiy til me'yoriga ko'ra 'кофе' so'zi erkak jinsiga (мужской род: крепкий черный кофе) tegishlidir."
+    },
+    {
+      "id": "ru_12",
+      "subject": "russian",
+      "topic": "Степени сравнения (Qiyoslash darajalari)",
+      "difficulty": "medium",
+      "question": "Какая форма сравнительной степени образована правильно?",
+      "options": ["Более красивее", "Красивее", "Самый красивейший", "Красивейше"],
+      "correct_answer": 1,
+      "explanation": "Taqqoslash darajasida 'более' so'zi faqat oddiy sifat bilan keladi (более красивый). 'Красивее' esa to'g'ri sodda qiyosiy darajadir."
+    },
+    {
+      "id": "ru_13",
+      "subject": "russian",
+      "topic": "Причастия и деепричастия (Sifatdosh va ravishdosh)",
+      "difficulty": "hard",
+      "question": "Укажите деепричастие совершенного вида:",
+      "options": ["Читая", "Прочитав", "Читающий", "Прочитанный"],
+      "correct_answer": 1,
+      "explanation": "'Прочитав' — tugallangan harakatni bildiruvchi 'что сделав?' so'rog'iga javob beruvchi ravishdosh (деепричастие совершенного вида)."
+    },
+    {
+      "id": "ru_14",
+      "subject": "russian",
+      "topic": "Предлоги (Predloglar)",
+      "difficulty": "medium",
+      "question": "Поезд прибыл в Ташкент ___ расписанию.",
+      "options": ["по", "по благодаря", "согласно", "на"],
+      "correct_answer": 0,
+      "explanation": "'По расписанию' (jadval bo'yicha) barqaror ibora bo'lib, 'по' predlogi bilan qo'llaniladi. Agar 'согласно' bo'lsa, 'согласно расписанию' bo'lar edi."
+    },
+    {
+      "id": "ru_15",
+      "subject": "russian",
+      "topic": "Числительные (Sonlar)",
+      "difficulty": "hard",
+      "question": "Выберите правильный вариант: Собрание началось с ___ участниками.",
+      "options": ["пятидесятью", "пятьюдесятью", "пятидесяти", "пятьдесят"],
+      "correct_answer": 1,
+      "explanation": "O'nlik sonlar (50-80) Творительный kelishigida har ikki qismi o'zgaradi: пятью + десятью = пятьюдесятью."
+    },
+    {
+      "id": "ru_16",
+      "subject": "russian",
+      "topic": "Синтаксис (Sintaksis)",
+      "difficulty": "medium",
+      "question": "Какое предложение является бессоюзным сложным?",
+      "options": [
+        "Солнце светило ярко, но ветер был холодным.",
+        "Наступило утро, птицы начали петь.",
+        "Мы знали, что скоро наступят каникулы.",
+        "Когда стемнело, все разошлись по домам."
+      ],
+      "correct_answer": 1,
+      "explanation": "'Наступило утро, птицы начали петь' gapida qismlar hech qanday bog'lovchisiz, faqat intonatsiya va vergul orqali bog'langan."
+    },
+    {
+      "id": "ru_17",
+      "subject": "russian",
+      "topic": "Фразеологизмы (Frazeologizmlar)",
+      "difficulty": "medium",
+      "question": "Что означает фразеологизм 'Бить баклуши'?",
+      "options": ["Тяжело работать", "Бездельничать", "Играть на музыкальном инструменте", "Ссориться"],
+      "correct_answer": 1,
+      "explanation": "'Бить баклуши' xalq iborasi vaqtni behuda o'tkazish, bekorchilik bilan shug'ullanish ma'nosini anglatadi."
+    },
+    {
+      "id": "ru_18",
+      "subject": "russian",
+      "topic": "Пунктуация (Tinish belgilari)",
+      "difficulty": "hard",
+      "question": "В каком предложении НЕ нужна запятая перед словом 'КАК'?",
+      "options": [
+        "Я знаю его как отличного специалиста.",
+        "Он бежал так быстро, как только мог.",
+        "Она прекрасна, как цветок.",
+        "Я видел, как это произошло."
+      ],
+      "correct_answer": 0,
+      "explanation": "'В качестве' (sifatida) ma'nosida kelgan 'как' oldidan vergul qo'yilmaydi: 'Я знаю его как отличного специалиста'."
+    },
+    {
+      "id": "ru_19",
+      "subject": "russian",
+      "topic": "Ударение (Urg'u)",
+      "difficulty": "medium",
+      "question": "В каком слове ударение падает на последний слог?",
+      "options": ["Торты", "Звонит", "Банты", "Шарфы"],
+      "correct_answer": 1,
+      "explanation": "Adabiy me'yor bo'yicha 'звони́т' so'zida urg'u oxirgi bo'g'inga tushadi. Qolgan so'zlarda birinchi bo'g'inga: то́рты, ба́нты, ша́рфы."
+    },
+    {
+      "id": "ru_20",
+      "subject": "russian",
+      "topic": "Словообразование (So'z yasalishi)",
+      "difficulty": "easy",
+      "question": "Какая приставка обозначает высшую степень качества?",
+      "options": ["Пре-", "При-", "Под-", "За-"],
+      "correct_answer": 0,
+      "explanation": "'Пре-' prefiksi 'очень' (juda) ma'nosini bildiradi: прекрасный (juda chiroyli), премилый, премудрый."
+    }
+  ]
+}

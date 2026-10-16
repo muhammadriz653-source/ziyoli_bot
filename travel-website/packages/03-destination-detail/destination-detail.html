@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayohat Tafsilotlari - TravelUX</title>
+  <meta name="description" content="Shahar haqida to'liq ma'lumot, diqqatga sazovor joylar, eng yaxshi tashrif vaqti, tavsiya etilgan mehmonxonalar va turlar.">
+  
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="destination-detail.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER & NAVIGATION
+       ========================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="../../index.html" class="brand-logo" aria-label="TravelUX Bosh sahifa">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        </span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+
+      <!-- Dinamik Render Qilinadigan Navbar -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Asosiy menyu"></nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="fav-nav-btn" id="open-favorites-btn" aria-label="Sevimlilar ro'yxati" title="Saqlanganlar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span class="favorites-badge-count">0</span>
+        </button>
+
+        <button class="btn btn-primary btn-sm" id="book-destination-cta-header">
+          <span>Bron Qilish</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Mobil menyu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu-drawer" id="mobile-drawer">
+    <div class="mobile-menu-header">
+      <a href="../../index.html" class="brand-logo">
+        <span class="logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+      <button class="drawer-close-btn" id="close-mobile-menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav"></div>
+  </div>
+
+  <main>
+    <!-- =========================
+         BREADCRUMB BAR
+         ========================= -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="../../index.html">Bosh sahifa</a>
+          <span class="separator">/</span>
+          <a href="../02-destinations/destinations.html">Yo'nalishlar</a>
+          <span class="separator">/</span>
+          <span class="current-crumb" id="breadcrumb-city">Yuklanmoqda...</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- =========================
+         HERO SHOWCASE SECTION
+         ========================= -->
+    <section class="detail-hero-section">
+      <div class="container">
+        <div class="detail-hero-card" id="detail-hero-card">
+          <!-- Dinamik ravishda JS orqali generatsiya qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         QUICK FACTS / OVERVIEW
+         ========================= -->
+    <section class="quick-facts-section">
+      <div class="container">
+        <div class="facts-grid" id="facts-grid">
+          <!-- Best time, Avg Budget, Language, Currency, Visa -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         MAIN DETAIL BODY WITH SIDEBAR
+         ========================= -->
+    <section class="detail-main-section">
+      <div class="container detail-layout">
+        <!-- Left Content Column -->
+        <div class="detail-content-col">
+          <!-- Overview text -->
+          <div class="content-block">
+            <h2 class="block-title">Shahar Haqida Umumiy Ma'lumot</h2>
+            <p class="overview-paragraph" id="detail-overview-text">Yuklanmoqda...</p>
+          </div>
+
+          <!-- Popular Places & Sights -->
+          <div class="content-block">
+            <h2 class="block-title">Mashhur Diqqatga Sazovor Joylar</h2>
+            <p class="block-subtitle">Ushbu shaharga borganda albatta ko'rishingiz shart bo'lgan eng go'zal maskanlar.</p>
+            <div class="sights-grid" id="popular-sights-container">
+              <!-- Sights cards -->
+            </div>
+          </div>
+
+          <!-- Top Activities -->
+          <div class="content-block">
+            <h2 class="block-title">Tavsiya Etilgan Mashg'ulotlar &amp; Ekskursiyalar</h2>
+            <div class="activities-list" id="activities-container">
+              <!-- Activities -->
+            </div>
+          </div>
+
+          <!-- Travel Tips -->
+          <div class="content-block">
+            <h2 class="block-title">Sayohatchi Uchun Foydali Maslahatlar</h2>
+            <div class="tips-box" id="tips-container">
+              <!-- Travel Tips -->
+            </div>
+          </div>
+
+          <!-- Recommended Hotels -->
+          <div class="content-block">
+            <h2 class="block-title">Tavsiya Qilinadigan Mehmonxonalar</h2>
+            <p class="block-subtitle">Shahardagi eng yuqori baholangan qulay va hashamatli turar joylar.</p>
+            <div class="recommended-hotels-grid" id="recommended-hotels-container">
+              <!-- Recommended Hotels -->
+            </div>
+          </div>
+
+          <!-- Recommended Packages -->
+          <div class="content-block">
+            <h2 class="block-title">Maxsus Tur Paketlari</h2>
+            <p class="block-subtitle">Ushbu manzil uchun maxsus shakllantirilgan qulay to'liq turlar.</p>
+            <div class="recommended-tours-grid" id="recommended-tours-container">
+              <!-- Recommended Packages -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Sticky Sidebar CTA -->
+        <aside class="detail-sidebar-col">
+          <div class="sticky-booking-card" id="booking-sidebar-card">
+            <div class="sidebar-price-header">
+              <span class="subtext">Sayohat narxi boshlanadi:</span>
+              <div class="price-display">
+                <span class="amount" id="sidebar-price-val">$899</span>
+                <span class="per">/ kishi boshiga</span>
+              </div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <div class="sidebar-features-list">
+              <div class="sidebar-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>To'liq viza yordami va konsultatsiya</span>
+              </div>
+              <div class="sidebar-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>4* yoki 5* saralangan mehmonxona</span>
+              </div>
+              <div class="sidebar-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>24/7 shaxsiy gid-konsyerj xizmati</span>
+              </div>
+              <div class="sidebar-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Bepul tibbiy sayohat sug'urtasi</span>
+              </div>
+            </div>
+
+            <button class="btn btn-accent btn-lg" id="open-booking-modal-btn" style="width: 100%; margin-top: 24px;">
+              <span>Sayohatni Bron Qilish</span>
+            </button>
+
+            <a href="../06-trip-planner/trip-planner.html" class="btn btn-outline" style="width: 100%; margin-top: 12px;">
+              <span>Byudjetni Hisoblash</span>
+            </a>
+
+            <div class="sidebar-guarantee">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Xavfsiz to'lov va 100% rasmiy shartnoma</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       BOOKING MODAL
+       ========================= -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Sayohatga Ariza Qoldirish</h3>
+        <button class="modal-close-btn" id="close-booking-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="destination-booking-form">
+          <div class="form-group">
+            <label class="form-label">Tanlangan Manzil</label>
+            <input type="text" id="modal-dest-name" class="form-control" readonly>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="booking-name">Ism va Familiyangiz *</label>
+            <input type="text" id="booking-name" class="form-control" placeholder="Masalan: Jamshid Karimov" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="booking-phone">Telefon Raqamingiz *</label>
+            <input type="tel" id="booking-phone" class="form-control" placeholder="+998 90 123 45 67" required>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="booking-date">Taxminiy Sana *</label>
+              <input type="date" id="booking-date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="booking-guests">Sayohatchilar Soni</label>
+              <select id="booking-guests" class="form-control">
+                <option value="1">1 Kishi</option>
+                <option value="2" selected>2 Kishi</option>
+                <option value="3">3 Kishi</option>
+                <option value="4">4+ Kishi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="booking-note">Qo'shimcha istaklar yoki savollar</label>
+            <textarea id="booking-note" class="form-control" rows="3" placeholder="Masalan: Bolalar bilan sayohat, dengiz manzarali xona..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            Arizani Yuborish
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand-logo">
+            <span class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+            <span>Travel<span class="accent-text">UX</span></span>
+          </a>
+          <p>Dunyo bo'ylab eng yaxshi sayohat taassurotlari. Real narxlar, ishonchli xizmat.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../02-destinations/destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="../04-tour-packages/tour-packages.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="../05-hotels/hotels.html" class="footer-link">Hotels</a></li>
+            <li><a href="../06-trip-planner/trip-planner.html" class="footer-link">Trip Planner</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html" class="footer-link">About Us</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact</a></li>
+            <li><a href="../07-about/about.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html#faq" class="footer-link">Help Center</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Travel Website. All rights reserved.</p>
+        <p>Premium Sayohat Detallari</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Yuqoriga qaytish">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="../../assets/js/travel-data.js"></script>
+  <script src="destination-detail.js"></script>
+</body>
+</html>

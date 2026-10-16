@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayohat Rejalashtirish & Byudjet Kalkulyatori | TravelUX</title>
+  <meta name="description" content="Interaktiv sayohat byudjeti kalkulyatori. Parvoz, mehmonxona, ovqatlanish, transport va ekskursiya xarajatlarini aniq hisoblang.">
+  
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="trip-planner.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER & NAVIGATION
+       ========================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="../../index.html" class="brand-logo" aria-label="TravelUX Bosh sahifa">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        </span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+
+      <!-- Dinamik Render Qilinadigan Navbar -->
+      <nav class="nav-menu" id="desktop-nav" aria-label="Asosiy menyu"></nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="fav-nav-btn" id="open-favorites-btn" aria-label="Sevimlilar ro'yxati" title="Saqlanganlar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span class="favorites-badge-count">0</span>
+        </button>
+
+        <a href="trip-planner.html" class="btn btn-primary btn-sm">
+          <span>Reja Tuzish</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Mobil menyu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <div class="mobile-menu-drawer" id="mobile-drawer">
+    <div class="mobile-menu-header">
+      <a href="../../index.html" class="brand-logo">
+        <span class="logo-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+        <span>Travel<span class="accent-text">UX</span></span>
+      </a>
+      <button class="drawer-close-btn" id="close-mobile-menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav"></div>
+  </div>
+
+  <main>
+    <!-- =========================
+         PAGE HERO BANNER
+         ========================= -->
+    <section class="planner-hero">
+      <div class="planner-hero-overlay"></div>
+      <div class="container planner-hero-container">
+        <span class="hero-tag">Smart Travel Calculator</span>
+        <h1 class="page-title">Sayohat Rejasi &amp; Byudjet Kalkulyatori</h1>
+        <p class="page-subtitle">
+          Orzuingizdagi manzilni tanlang, sayohatchilar soni va uslubini belgilang — platformamiz barcha xarajatlarni real vaqt rejimida hisoblab beradi.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================
+         INTERACTIVE PLANNER ENGINE
+         ========================= -->
+    <section class="planner-workspace-section">
+      <div class="container planner-layout">
+        <!-- Left: Configuration Form -->
+        <div class="planner-form-col">
+          <!-- Step 1: Destination & Parameters -->
+          <div class="planner-card">
+            <div class="planner-step-header">
+              <span class="step-num">01</span>
+              <div>
+                <h3 class="step-heading">Asosiy Parametrlar</h3>
+                <p class="step-sub">Sayohat manzili, kunlar soni va sayohatchilar tarkibini belgilang.</p>
+              </div>
+            </div>
+
+            <!-- Destination selector -->
+            <div class="form-group">
+              <label class="form-label" for="planner-destination">Destination (Sayohat Yo'nalishi) *</label>
+              <select id="planner-destination" class="form-control">
+                <option value="1" data-city="Paris" data-flight="550" data-hotel="180" data-food="60" data-act="40" data-trans="15">Paris, France (Yevropa)</option>
+                <option value="2" data-city="Dubai" data-flight="420" data-hotel="220" data-food="70" data-act="55" data-trans="25">Dubai, UAE (Yaqin Sharq)</option>
+                <option value="3" data-city="Istanbul" data-flight="340" data-hotel="110" data-food="35" data-act="25" data-trans="10">Istanbul, Turkey (Sharqona)</option>
+                <option value="4" data-city="Tokyo" data-flight="850" data-hotel="210" data-food="75" data-act="50" data-trans="20">Tokyo, Japan (Osiyo)</option>
+                <option value="5" data-city="Bali" data-flight="680" data-hotel="95" data-food="30" data-act="30" data-trans="15">Bali, Indonesia (Tropik)</option>
+                <option value="6" data-city="Rome" data-flight="520" data-hotel="160" data-food="55" data-act="40" data-trans="15">Rome, Italy (Tarixiy)</option>
+                <option value="7" data-city="London" data-flight="620" data-hotel="230" data-food="80" data-act="50" data-trans="25">London, UK (Qirollik)</option>
+                <option value="8" data-city="Maldives" data-flight="750" data-hotel="390" data-food="95" data-act="75" data-trans="40">Maldives (Romantik Hordiq)</option>
+              </select>
+            </div>
+
+            <!-- Sliders for Days and Travelers -->
+            <div class="slider-row">
+              <div class="slider-field">
+                <div class="slider-header">
+                  <label class="form-label" for="planner-travelers">Number of Travelers (Sayohatchilar):</label>
+                  <span class="slider-value-badge" id="travelers-badge">2 kishi</span>
+                </div>
+                <input type="range" id="planner-travelers" min="1" max="8" value="2" class="range-slider">
+                <div class="slider-ticks">
+                  <span>1</span><span>2</span><span>4</span><span>6</span><span>8</span>
+                </div>
+              </div>
+
+              <div class="slider-field">
+                <div class="slider-header">
+                  <label class="form-label" for="planner-days">Number of Days (Kunlar soni):</label>
+                  <span class="slider-value-badge" id="days-badge">7 kun</span>
+                </div>
+                <input type="range" id="planner-days" min="3" max="21" value="7" class="range-slider">
+                <div class="slider-ticks">
+                  <span>3 kun</span><span>7 kun</span><span>14 kun</span><span>21 kun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Travel Style -->
+          <div class="planner-card">
+            <div class="planner-step-header">
+              <span class="step-num">02</span>
+              <div>
+                <h3 class="step-heading">Travel Style (Sayohat Uslubi)</h3>
+                <p class="step-sub">Sizga eng mos keluvchi hordiq uslubini tanlang.</p>
+              </div>
+            </div>
+
+            <div class="travel-styles-grid">
+              <!-- Budget -->
+              <div class="style-card" data-style="budget" data-mult="0.75">
+                <div class="style-icon">🎒</div>
+                <h4 class="style-title">Budget</h4>
+                <p class="style-desc">Tejamkor, qulay va yoshlarbop xarajatlar.</p>
+              </div>
+
+              <!-- Comfort (Default) -->
+              <div class="style-card active" data-style="comfort" data-mult="1.0">
+                <div class="style-icon">☕</div>
+                <h4 class="style-title">Comfort</h4>
+                <p class="style-desc">Standart 4* mehmonxonalar va optimal balans.</p>
+              </div>
+
+              <!-- Luxury -->
+              <div class="style-card" data-style="luxury" data-mult="1.85">
+                <div class="style-icon">👑</div>
+                <h4 class="style-title">Luxury</h4>
+                <p class="style-desc">5* hashamat, VIP transfer va eng yaxshi xizmat.</p>
+              </div>
+
+              <!-- Adventure -->
+              <div class="style-card" data-style="adventure" data-mult="1.15">
+                <div class="style-icon">🧗‍♂️</div>
+                <h4 class="style-title">Adventure</h4>
+                <p class="style-desc">Faol hordiq, toqqa chiqish va ekstrim.</p>
+              </div>
+
+              <!-- Family -->
+              <div class="style-card" data-style="family" data-mult="1.2">
+                <div class="style-icon">👨‍👩‍👧‍👦</div>
+                <h4 class="style-title">Family</h4>
+                <p class="style-desc">Bolalar bilan tinch, xavfsiz va keng xonalar.</p>
+              </div>
+
+              <!-- Romantic -->
+              <div class="style-card" data-style="romantic" data-mult="1.35">
+                <div class="style-icon">💖</div>
+                <h4 class="style-title">Romantic</h4>
+                <p class="style-desc">Sevishganlar, asal oyi va maxsus shoular.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Flight Class -->
+          <div class="planner-card">
+            <div class="planner-step-header">
+              <span class="step-num">03</span>
+              <div>
+                <h3 class="step-heading">Parvoz Klassi</h3>
+                <p class="step-sub">Aviachipta qulaylik darajasi.</p>
+              </div>
+            </div>
+
+            <div class="flight-class-selector">
+              <label class="flight-opt active">
+                <input type="radio" name="flight-class" value="1.0" checked>
+                <div class="flight-opt-content">
+                  <span class="opt-name">✈️ Economy Class</span>
+                  <span class="opt-sub">Standart xalqaro aviaqatnov</span>
+                </div>
+              </label>
+
+              <label class="flight-opt">
+                <input type="radio" name="flight-class" value="2.2">
+                <div class="flight-opt-content">
+                  <span class="opt-name">🛋️ Business Class</span>
+                  <span class="opt-sub">Keng o'rindiq, VIP Lounge va qo'shimcha yuk</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Real-time Budget Calculation Output -->
+        <aside class="planner-output-col">
+          <div class="cost-summary-card">
+            <div class="cost-header">
+              <span class="badge badge-teal">Real-Time Byudjet</span>
+              <h3 class="cost-card-title">Estimated Trip Cost</h3>
+              <p class="cost-card-sub" id="trip-meta-subtitle">Paris &bull; 2 sayohatchi &bull; 7 kun &bull; Comfort</p>
+            </div>
+
+            <!-- Total display -->
+            <div class="total-cost-block">
+              <div class="total-big-price" id="calc-total-amount">$2,840</div>
+              <div class="per-person-price">Taxminan: <strong id="calc-per-person">$1,420</strong> / kishi boshiga</div>
+            </div>
+
+            <!-- Breakdown list -->
+            <div class="cost-breakdown-list">
+              <!-- Flights -->
+              <div class="cost-item">
+                <div class="cost-item-left">
+                  <span class="cost-icon flight-icon">✈️</span>
+                  <div>
+                    <span class="cost-name">Flights (Parvozlar)</span>
+                    <span class="cost-sub" id="calc-flights-sub">2 kishi borish-kelish</span>
+                  </div>
+                </div>
+                <span class="cost-val" id="calc-flights-val">$1,100</span>
+              </div>
+
+              <!-- Hotel -->
+              <div class="cost-item">
+                <div class="cost-item-left">
+                  <span class="cost-icon hotel-icon">🏨</span>
+                  <div>
+                    <span class="cost-name">Hotel (Turar joy)</span>
+                    <span class="cost-sub" id="calc-hotel-sub">7 kecha &bull; 1 xona</span>
+                  </div>
+                </div>
+                <span class="cost-val" id="calc-hotel-val">$1,260</span>
+              </div>
+
+              <!-- Food -->
+              <div class="cost-item">
+                <div class="cost-item-left">
+                  <span class="cost-icon food-icon">🍽️</span>
+                  <div>
+                    <span class="cost-name">Food (Ovqatlanish)</span>
+                    <span class="cost-sub" id="calc-food-sub">Nonushta, tushlik &amp; kechki</span>
+                  </div>
+                </div>
+                <span class="cost-val" id="calc-food-val">$420</span>
+              </div>
+
+              <!-- Activities -->
+              <div class="cost-item">
+                <div class="cost-item-left">
+                  <span class="cost-icon act-icon">🎟️</span>
+                  <div>
+                    <span class="cost-name">Activities (Ekskursiyalar)</span>
+                    <span class="cost-sub">Chiptalar &amp; gidlar</span>
+                  </div>
+                </div>
+                <span class="cost-val" id="calc-activities-val">$280</span>
+              </div>
+
+              <!-- Transport -->
+              <div class="cost-item">
+                <div class="cost-item-left">
+                  <span class="cost-icon trans-icon">🚕</span>
+                  <div>
+                    <span class="cost-name">Transport (Shahar ichi)</span>
+                    <span class="cost-sub">Metro &amp; taksi</span>
+                  </div>
+                </div>
+                <span class="cost-val" id="calc-trans-val">$105</span>
+              </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="planner-actions">
+              <button class="btn btn-accent btn-lg" id="save-plan-btn" style="width: 100%;">
+                <span>Rejani Saqlash</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+              </button>
+
+              <button class="btn btn-outline" id="print-plan-btn" style="width: 100%; margin-top: 10px;">
+                <span>Chop Etish / PDF</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================
+         DAY-BY-DAY ITINERARY GENERATOR
+         ========================= -->
+    <section class="itinerary-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Tavsiya Etilgan Marshrut</span>
+          <h2 class="section-title">Kunlik Sayohat Rejasi (Day-by-Day Itinerary)</h2>
+          <p class="section-subtitle">
+            Siz tanlagan manzil va kunlar soniga moslashtirilgan namunaviy sayohat dasturi.
+          </p>
+        </div>
+
+        <div class="itinerary-timeline" id="itinerary-timeline-container">
+          <!-- Dinamik ravishda JS orqali generatsiya qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PACKING CHECKLIST
+         ========================= -->
+    <section class="checklist-section">
+      <div class="container">
+        <div class="checklist-card">
+          <div class="section-header" style="margin-bottom: 28px;">
+            <span class="section-badge">Sayohatga Tayyorgarlik</span>
+            <h2 class="section-title">Essential Travel Checklist</h2>
+            <p class="section-subtitle">Sayohatga chiqishdan oldin tekshirilishi kerak bo'lgan eng muhim narsalar.</p>
+          </div>
+
+          <div class="checklist-grid" id="checklist-container">
+            <label class="check-box-item">
+              <input type="checkbox" checked>
+              <span>Xorijga chiqish biometrik pasporti (kamida 6 oy amal qilish muddati)</span>
+            </label>
+            <label class="check-box-item">
+              <input type="checkbox" checked>
+              <span>Viza yoki kirish ruxsatnomasi (kerak bo'lsa)</span>
+            </label>
+            <label class="check-box-item">
+              <input type="checkbox" checked>
+              <span>Aviachiptalar va mehmonxona bron tasdiqnomalari</span>
+            </label>
+            <label class="check-box-item">
+              <input type="checkbox">
+              <span>Xalqaro tibbiy sayohat sug'urtasi polisi</span>
+            </label>
+            <label class="check-box-item">
+              <input type="checkbox">
+              <span>Universal rozetka adapteri va powerbank</span>
+            </label>
+            <label class="check-box-item">
+              <input type="checkbox">
+              <span>Xalqaro to'lov kartalari (Visa/Mastercard) va oz miqdorda naqd valyuta</span>
+            </label>
+            <label class="check-box-item">
+              <input type="checkbox">
+              <span>Shaxsiy birinchi yordam dori-darmonlari</span>
+            </label>
+            <label class="check-box-item">
+              <input type="checkbox">
+              <span>Shahar oflayn xaritasi (Google Maps yoki Maps.me) yuklab olish</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../../index.html" class="brand-logo">
+            <span class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span>
+            <span>Travel<span class="accent-text">UX</span></span>
+          </a>
+          <p>Sayohatlaringizni aqlli va tejamkor rejalashtirishning eng yaxshi yechimi.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="../02-destinations/destinations.html" class="footer-link">Destinations</a></li>
+            <li><a href="../04-tour-packages/tour-packages.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="../05-hotels/hotels.html" class="footer-link">Hotels</a></li>
+            <li><a href="trip-planner.html" class="footer-link">Trip Planner</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html" class="footer-link">About Us</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact</a></li>
+            <li><a href="../07-about/about.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="../07-about/about.html#faq" class="footer-link">Help Center</a></li>
+            <li><a href="../07-about/about.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="../07-about/about.html#contact" class="footer-link">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Travel Website. All rights reserved.</p>
+        <p>Interactive Travel Budget &amp; Itinerary Planner</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Yuqoriga qaytish">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="../../assets/js/travel-data.js"></script>
+  <script src="trip-planner.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+"""Keyboards package initialization."""
+from .menus import (
+    main_menu_keyboard,
+    subjects_keyboard,
+    subject_actions_keyboard,
+    test_difficulty_keyboard,
+    test_count_keyboard,
+    quiz_options_keyboard,
+    quiz_result_keyboard,
+    translator_pairs_keyboard,
+    translator_actions_keyboard,
+    dictionary_menu_keyboard,
+    dictionary_word_keyboard,
+    logic_menu_keyboard,
+    logic_question_keyboard,
+    profile_menu_keyboard,
+    admin_menu_keyboard,
+    back_to_main_keyboard,
+)
+
+__all__ = [
+    "main_menu_keyboard",
+    "subjects_keyboard",
+    "subject_actions_keyboard",
+    "test_difficulty_keyboard",
+    "test_count_keyboard",
+    "quiz_options_keyboard",
+    "quiz_result_keyboard",
+    "translator_pairs_keyboard",
+    "translator_actions_keyboard",
+    "dictionary_menu_keyboard",
+    "dictionary_word_keyboard",
+    "logic_menu_keyboard",
+    "logic_question_keyboard",
+    "profile_menu_keyboard",
+    "admin_menu_keyboard",
+    "back_to_main_keyboard",
+]
