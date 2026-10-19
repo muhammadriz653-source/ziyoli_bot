@@ -3,6 +3,7 @@ Ziyoli Bot - Professional Ta'lim Telegram Boti.
 Asosiy ishga tushirish moduli (bot.py).
 """
 
+import os
 import sys
 import asyncio
 import logging
@@ -21,6 +22,27 @@ from database.db import init_db
 from handlers import main_router
 
 logger = logging.getLogger(__name__)
+
+
+async def start_health_check_server(port: int) -> None:
+    """Render/Cloud platformalari uchun mini health-check server."""
+    try:
+        from aiohttp import web
+
+        async def handle_ping(request):
+            return web.Response(text="Ziyoli Bot is alive and running!", status=200)
+
+        app = web.Application()
+        app.router.add_get("/", handle_ping)
+        app.router.add_get("/health", handle_ping)
+        runner = web.AppRunner(app)
+        await runner.setup()
+        site = web.TCPSite(runner, "0.0.0.0", port)
+        await site.start()
+        logger.info(f"Health-check server 0.0.0.0:{port} manzilida ishga tushdi.")
+    except Exception as exc:
+        logger.warning(f"Health-check serverni ishga tushirishda xatolik: {exc}")
+
 
 
 async def set_bot_commands(bot: Bot) -> None:
@@ -92,6 +114,14 @@ async def main() -> None:
     # Startup va Shutdown hodisalari
     dp.startup.register(on_startup)
     dp.shutdown.register(on_shutdown)
+
+    # Cloud/Render Web Service uchun mini health-check server
+    web_port = os.getenv("PORT")
+    if web_port:
+        try:
+            await start_health_check_server(int(web_port))
+        except ValueError:
+            pass
 
     # Eski xabarlarni tozalash va pollingni boshlash
     try:
